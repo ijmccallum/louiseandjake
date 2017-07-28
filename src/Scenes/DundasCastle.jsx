@@ -1,21 +1,12 @@
 import React, { Component } from 'react';
-
+import Page from '../Components/Page.jsx';
 
 class DundasCastle extends Component {
   render() {
     return (
-      <div className="page">
-        <div className="page__header">
-          <div className="content-width-wrap">
-            <h2>DundasCastle</h2>
-          </div>
-        </div>
-        <div className="page__body">
-          <div className="content-width-wrap">
-            DundasCastle copy...
-          </div>
-        </div>
-      </div>
+      <Page title="DundasCastle">
+        DundasCastle copy...
+      </Page>
     );
   }
 }

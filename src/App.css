@@ -1,8 +1,0 @@
-/* just basic typography / base stuff in here. Doing the main styling with styled-components! */
-.app {
-  display: flex;
-}
-
-.app__header {}
-.app__body {}
-.app__footer {margin-top: auto;}

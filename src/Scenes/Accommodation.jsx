@@ -1,21 +1,14 @@
 import React, { Component } from 'react';
+import Page from '../Components/Page.jsx';
 
+//#323232
 
 class Accommodation extends Component {
   render() {
     return (
-      <div className="page">
-        <div className="page__header">
-          <div className="content-width-wrap">
-            <h2>Accommodation</h2>
-          </div>
-        </div>
-        <div className="page__body">
-          <div className="content-width-wrap">
-            accommodation copy...
-          </div>
-        </div>
-      </div>
+      <Page title="Accommodation">
+        accommodation copy...
+      </Page>
     );
   }
 }

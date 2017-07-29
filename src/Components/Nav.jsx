@@ -1,22 +1,16 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-
+import Layouts from './Layouts';
 
 const StyledLink = styled(Link)`
   padding: 10px;
-  font-style: italic;
   color: white;
   display: inline-block;
   text-decoration: none;
 `;
 
-const StyledActiveLink = styled(Link)`
-  padding: 10px;
-  font-style: italic;
-  color: white;
-  display: inline-block;
-  text-decoration: none;
+const StyledActiveLink = StyledLink.extend`
   font-weight: bold;
 `;
 
@@ -39,7 +33,7 @@ function NavLink(props){
 
 function Nav(props){
   return (
-    <nav className="nav">
+    <Layouts.ContentWidthWrapper>
       <NavLink url="/" text="Dundas Castle" routeProps={props} />
       <NavLink url="/accommodation" text="Accomodation" routeProps={props} />
       <NavLink url="/edinburgh" text="Edinburgh" routeProps={props} />
@@ -48,7 +42,7 @@ function Nav(props){
       <NavLink url="/rsvp" text="RSVP" routeProps={props} />
       <NavLink url="/transport" text="Transport" routeProps={props} />
       <NavLink url="/wedding-party" text="Wedding Party" routeProps={props} />
-    </nav>
+    </Layouts.ContentWidthWrapper>
   );
 }
 

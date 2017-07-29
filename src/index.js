@@ -40,8 +40,9 @@ const AppFooter = styled.footer`
 const history = createHashHistory();
 
 ReactDOM.render((
-  <Router history={history}>
-    <AppContainer>
+  <AppContainer>
+    <Router history={history}>
+      <div>
       <AppHeader>
         <Route path="/" component={Nav} />
       </AppHeader>
@@ -54,12 +55,12 @@ ReactDOM.render((
       <Route path="/rsvp" exact component={RSVP} />
       <Route path="/transport" exact component={Transport} />
       <Route path="/wedding-party" exact component={WeddingParty} />
-
-      <AppFooter>
-        <Route path="/" component={Footer} />
-      </AppFooter>
-    </AppContainer>
-  </Router>
+      </div>
+    </Router>
+    <AppFooter>
+      <Footer />
+    </AppFooter>
+  </AppContainer>
 ), document.getElementById('root'));
 
 registerServiceWorker();

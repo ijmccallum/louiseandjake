@@ -1,35 +1,35 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Layouts from './Layouts';
-
-const PageHeader = styled.div`
-  padding: 50px 0;
-  text-align: center;
-`;
-
-const PageHero = styled.div`
-  height: 480px;
-  background-color: gold;
-  background-image: url('http://dundascastle.co.uk/wp-content/uploads/2014/08/postcard1_castle_with_bridges-1024x704.jpg');
-  background-size: cover;
-  background-position: center 33%;
-  -webkit-box-shadow: inset 0px 91px 19px -87px rgba(97,130,153,0.54);
-  -moz-box-shadow: inset 0px 91px 19px -87px rgba(97,130,153,0.54);
-  box-shadow: inset 0px 91px 19px -87px rgba(97,130,153,0.54);
-  border-top: 1px solid #98acb9;
-`;
+import Colors from '../Services/colors.js'
 
 function Page(props){
+
+  const PageHeader = styled.div`
+    padding: 100px 0 100px;
+    text-align: center;
+    color: ${Colors.white};
+    position: relative;
+  `;
+  
+  const PageHero = styled.div`
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+    background-color: ${Colors.gold1};
+    background-image: url('/images/${props.heroPic}');
+    background-size: cover;
+    background-position: center 33%;
+  `;
+
   return (
     <div>
-      <Layouts.ContentWidthWrapper>
-        <PageHeader>
-            <h2>{props.title}</h2>
-        </PageHeader>
-      </Layouts.ContentWidthWrapper>
-      <PageHero>
-        hero!
-      </PageHero>
+      <PageHeader>
+          <h2>{props.title}</h2>
+        <PageHero />
+      </PageHeader>
       <Layouts.ContentWidthWrapper>
         {props.children}
       </Layouts.ContentWidthWrapper>

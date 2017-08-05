@@ -4,11 +4,14 @@ import { Router, Route, Link } from 'react-router-dom';
 import createHashHistory from 'history/createHashHistory';
 import registerServiceWorker from './registerServiceWorker';
 import styled from 'styled-components';
+import Colors from './Services/colors';
 
 import Nav from './Components/Nav.jsx';
 import Footer from './Components/Footer.jsx';
+import MusicPlayer from './Components/MusicPlayer.jsx';
 
 //Scenes
+import Home from './Scenes/Home.jsx';
 import DundasCastle from './Scenes/DundasCastle.jsx';
 import Accommodation from './Scenes/Accommodation.jsx';
 import Edinburgh from './Scenes/Edinburgh.jsx';
@@ -24,15 +27,20 @@ const AppContainer = styled.main`
   min-height: 100vh;
 `;
 
+// background-color: ${Colors.gold1};
 const AppHeader = styled.header`
-  background-color: #323232;
   padding: 4px;
   color: white;
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  right: 0;
 `;
 
 const AppFooter = styled.footer`
   margin-top: auto;
-  background-color: #323232;
+  background-color: ${Colors.gold1};
   padding: 4px;
   color: white;
 `;
@@ -47,7 +55,8 @@ ReactDOM.render((
         <Route path="/" component={Nav} />
       </AppHeader>
 
-      <Route path="/" exact component={DundasCastle} />
+      <Route path="/" exact component={Home} />
+      <Route path="/dundas-castle" exact component={DundasCastle} />
       <Route path="/accommodation" exact component={Accommodation} />
       <Route path="/edinburgh" exact component={Edinburgh} />
       <Route path="/gifts" exact component={Gifts} />
@@ -60,6 +69,7 @@ ReactDOM.render((
     <AppFooter>
       <Footer />
     </AppFooter>
+    <MusicPlayer />
   </AppContainer>
 ), document.getElementById('root'));
 

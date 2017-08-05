@@ -4,7 +4,7 @@ import Page from '../Components/Page.jsx';
 class Music extends Component {
   render() {
     return (
-      <Page title="Music">
+      <Page title="Music" heroPic="dundas.jpg">
         Music copy...
       </Page>
     );

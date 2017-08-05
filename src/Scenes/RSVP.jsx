@@ -4,7 +4,7 @@ import Page from '../Components/Page.jsx';
 class RSVP extends Component {
   render() {
     return (
-      <Page title="RSVP">
+      <Page title="RSVP" heroPic="dundas.jpg">
         RSVP copy...
       </Page>
     );

@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import Page from '../Components/Page.jsx';
 
-class Transport extends Component {
+class Home extends Component {
   render() {
     return (
-      <Page title="Transport" heroPic="dundas.jpg">
-        Transport copy...
+      <Page title="Louise & Jake" heroPic="louise-jake.jpg">
+        Homepage copy...
       </Page>
     );
   }
 }
 
-export default Transport;
+export default Home;

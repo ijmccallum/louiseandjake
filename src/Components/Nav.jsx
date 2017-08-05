@@ -39,7 +39,8 @@ function Nav(props){
   return (
     <Layouts.ContentWidthWrapper>
       <NavWrap>
-        <NavLink url="/" text="Dundas Castle" routeProps={props} />
+        <NavLink url="/" text="Louise & Jake" routeProps={props} />
+        <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={props} />
         <NavLink url="/accommodation" text="Accomodation" routeProps={props} />
         <NavLink url="/edinburgh" text="Edinburgh" routeProps={props} />
         <NavLink url="/gifts" text="Gifts" routeProps={props} />

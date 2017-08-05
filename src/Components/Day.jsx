@@ -1,13 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 import moment from 'moment';
+import Colors from '../Services/colors';
 
 export default function Day(props){
   //console.log('props!', props);
   const Day = styled.div`
     width: 10px;
     height: 10px;
-    background-color: #aaa;
+    background-color: ${Colors.white};
     display: inline-block;
     margin: 1px;
     overflow: hidden;
@@ -53,28 +54,27 @@ export default function Day(props){
   }
 
   let opacity = 1;
-  //if the day has passed, fade it
-  if (props.date.diff(moment()) < 0) {
-    opacity = 0.1;
-  }
-  // if the day is beyond the wedding date, fade it
-  if (props.date.diff(props.endDate) > 0) {
-    opacity = 0.1;
+  //if the day has passed, or is beyond the wedding day
+  if (props.date.diff(moment()) < 0 || props.date.diff(props.endDate) > 0) {
+    const OutDay = Day.extend`
+      background-color: ${Colors.gold3};
+      opacity: 0.3;
+    `;
+    return (<OutDay />);
   }
   
   var day = props.date.day();
   var isWeekend = (day == 6) || (day == 0);
   if (isWeekend) {
     const WeekendDay = Day.extend`
-      background-color: white;
-      opacity: ${opacity};
+      background-color: ${Colors.white};
     `;
     return (<WeekendDay />);
   }
 
-  const BordingDay = Day.extend`
-    opacity: ${opacity};
+  const WeekDay = Day.extend`
+    opacity: 0.5;
   `;
   // just a boring old normal day
-  return (<BordingDay />);
+  return (<WeekDay />);
 }

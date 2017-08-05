@@ -4,7 +4,7 @@ import Page from '../Components/Page.jsx';
 class DundasCastle extends Component {
   render() {
     return (
-      <Page title="DundasCastle">
+      <Page title="DundasCastle" heroPic="dundas.jpg">
         DundasCastle copy...
       </Page>
     );

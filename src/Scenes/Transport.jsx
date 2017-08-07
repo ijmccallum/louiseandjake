@@ -4,7 +4,7 @@ import Page from '../Components/Page.jsx';
 class Transport extends Component {
   render() {
     return (
-      <Page title="Transport" heroPic="dundas.jpg">
+      <Page title="Transport" heroPic="dundas.jpg" backgroundSize="cover">
         Transport copy...
       </Page>
     );

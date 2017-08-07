@@ -4,8 +4,8 @@ import Page from '../Components/Page.jsx';
 class Edinburgh extends Component {
   render() {
     return (
-      <Page title="Edinburgh" heroPic="dundas.jpg">
-        Edinburgh copy...
+      <Page title="Edinburgh" heroPic="dundas.jpg" backgroundSize="cover">
+        Edinburgh is a city
       </Page>
     );
   }

@@ -5,11 +5,10 @@ import styled from 'styled-components';
 class Gifts extends Component {
   render() {
     const Poem = styled.div`
-      text-align: center;
-      margin: 20px auto;
+    
     `;
     return (
-      <Page title="Gifts" heroPic="piggies.jpg">
+      <Page title="Gifts" heroPic="piggies.jpg" backgroundSize="contain">
         <Poem>
           We’ll be husband and wife for the rest of our life,<br />
           In our little home made for two.<br />

@@ -16,6 +16,19 @@ function ContentWidthWrapper(props){
   );
 }
 
+const StyledContentPadder = styled.div`
+  padding: 10px;
+`;
+
+function ContentPadder(props){
+  return (
+    <StyledContentPadder>
+      {props.children}
+    </StyledContentPadder>
+  )
+}
+
 export default {
-  ContentWidthWrapper
+  ContentWidthWrapper,
+  ContentPadder
 };

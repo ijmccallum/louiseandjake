@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import Layouts from './Layouts';
+import Colors from '../Services/colors';
 
 const NavWrap = styled.div`
   display: flex;
@@ -13,10 +14,14 @@ const StyledLink = styled(Link)`
   color: white;
   display: inline-block;
   text-decoration: none;
+  text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
 `;
 
 const StyledActiveLink = StyledLink.extend`
   font-weight: bold;
+  border-color: ${Colors.white};
 `;
 
 function NavLink(props){

@@ -6,7 +6,7 @@ import Page from '../Components/Page.jsx';
 class Accommodation extends Component {
   render() {
     return (
-      <Page title="Accommodation" heroPic="dundas.jpg">
+      <Page title="Accommodation" heroPic="dundas.jpg" backgroundSize="cover">
         accommodation copy...
       </Page>
     );

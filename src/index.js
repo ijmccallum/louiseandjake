@@ -11,6 +11,7 @@ import Footer from './Components/Footer.jsx';
 import MusicPlayer from './Components/MusicPlayer.jsx';
 
 //Scenes
+import Password from './Scenes/Password.jsx';
 import Home from './Scenes/Home.jsx';
 import DundasCastle from './Scenes/DundasCastle.jsx';
 import Accommodation from './Scenes/Accommodation.jsx';
@@ -51,19 +52,19 @@ ReactDOM.render((
   <AppContainer>
     <Router history={history}>
       <div>
-      <AppHeader>
-        <Route path="/" component={Nav} />
-      </AppHeader>
+        <AppHeader>
+          <Route path="/" component={Nav} />
+        </AppHeader>
 
-      <Route path="/" exact component={Home} />
-      <Route path="/dundas-castle" exact component={DundasCastle} />
-      <Route path="/accommodation" exact component={Accommodation} />
-      <Route path="/edinburgh" exact component={Edinburgh} />
-      <Route path="/gifts" exact component={Gifts} />
-      <Route path="/music" exact component={Music} />
-      <Route path="/rsvp" exact component={RSVP} />
-      <Route path="/transport" exact component={Transport} />
-      <Route path="/wedding-party" exact component={WeddingParty} />
+        <Route path="/" exact component={Home} />
+        <Route path="/dundas-castle" exact component={DundasCastle} />
+        <Route path="/accommodation" exact component={Accommodation} />
+        <Route path="/edinburgh" exact component={Edinburgh} />
+        <Route path="/gifts" exact component={Gifts} />
+        <Route path="/music" exact component={Music} />
+        <Route path="/rsvp" exact component={RSVP} />
+        <Route path="/transport" exact component={Transport} />
+        <Route path="/wedding-party" exact component={WeddingParty} />
       </div>
     </Router>
     <AppFooter>

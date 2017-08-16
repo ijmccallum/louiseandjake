@@ -91,9 +91,11 @@ class LogOut extends React.Component {
     super(props);
     this.handleClick = this.handleClick.bind(this);
   }
+  
 
   handleClick(){
     document.cookie = "l=0; expires=Thu, 31 Dec 2018 00:00:00 GMT";
+    console.log('log out!');
     history.push("/login");
   }
 

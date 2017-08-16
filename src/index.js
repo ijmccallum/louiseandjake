@@ -75,6 +75,37 @@ class EnsureLoggedInContainer extends React.Component {
   }
 }
 
+const LogOutBtn = styled.button`
+  position: absolute;
+  color: white;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  border: none;
+  padding: 5px;
+`;
+
+class LogOut extends React.Component {
+  constructor(props) {
+    super(props);
+    this.handleClick = this.handleClick.bind(this);
+  }
+
+  handleClick(){
+    document.cookie = "l=0; expires=Thu, 31 Dec 2018 00:00:00 GMT";
+    history.push("/login");
+  }
+
+  render() {
+    return (
+      <LogOutBtn onclick={this.handleClick}>
+        X
+      </LogOutBtn>
+    )
+  }
+}
+
 ReactDOM.render((
   <AppContainer>
 
@@ -95,6 +126,7 @@ ReactDOM.render((
             <Route path="/rsvp" exact component={RSVP} />
             <Route path="/transport" exact component={Transport} />
             <Route path="/wedding-party" exact component={WeddingParty} />
+            <LogOut />
           </div>
         </EnsureLoggedInContainer>
       </div>

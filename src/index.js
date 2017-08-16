@@ -49,6 +49,10 @@ const AppFooter = styled.footer`
 const history = createHashHistory();
 
 let isLoggedIn = false;
+const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+if (loggedInCookie == '1') {
+  isLoggedIn = true;
+}
 
 class EnsureLoggedInContainer extends React.Component {
   componentDidMount() {
@@ -63,6 +67,8 @@ class EnsureLoggedInContainer extends React.Component {
     } else {
       return <Login successHandler={() => {
         isLoggedIn = true;
+        //set cookie to remember!!
+        document.cookie = "l=1; expires=Thu, 31 Dec 2018 00:00:00 GMT";
         history.push("/");
       }}/>
     }

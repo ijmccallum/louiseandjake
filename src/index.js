@@ -11,7 +11,7 @@ import Footer from './Components/Footer.jsx';
 import MusicPlayer from './Components/MusicPlayer.jsx';
 
 //Scenes
-import Password from './Scenes/Password.jsx';
+import Login from './Scenes/Login.jsx';
 import Home from './Scenes/Home.jsx';
 import DundasCastle from './Scenes/DundasCastle.jsx';
 import Accommodation from './Scenes/Accommodation.jsx';
@@ -48,28 +48,55 @@ const AppFooter = styled.footer`
 
 const history = createHashHistory();
 
+let isLoggedIn = false;
+
+class EnsureLoggedInContainer extends React.Component {
+  componentDidMount() {
+    if (!isLoggedIn) {
+      history.replace("/login");
+    }
+  }
+
+  render() {
+    if (isLoggedIn) {
+      return this.props.children
+    } else {
+      return <Login successHandler={() => {
+        isLoggedIn = true;
+        history.push("/");
+      }}/>
+    }
+  }
+}
+
 ReactDOM.render((
   <AppContainer>
+
     <Router history={history}>
       <div>
         <AppHeader>
           <Route path="/" component={Nav} />
         </AppHeader>
 
-        <Route path="/" exact component={Home} />
-        <Route path="/dundas-castle" exact component={DundasCastle} />
-        <Route path="/accommodation" exact component={Accommodation} />
-        <Route path="/edinburgh" exact component={Edinburgh} />
-        <Route path="/gifts" exact component={Gifts} />
-        <Route path="/music" exact component={Music} />
-        <Route path="/rsvp" exact component={RSVP} />
-        <Route path="/transport" exact component={Transport} />
-        <Route path="/wedding-party" exact component={WeddingParty} />
+        <EnsureLoggedInContainer>
+          <div>
+            <Route path="/" exact component={Home} />
+            <Route path="/dundas-castle" exact component={DundasCastle} />
+            <Route path="/accommodation" exact component={Accommodation} />
+            <Route path="/edinburgh" exact component={Edinburgh} />
+            <Route path="/gifts" exact component={Gifts} />
+            <Route path="/music" exact component={Music} />
+            <Route path="/rsvp" exact component={RSVP} />
+            <Route path="/transport" exact component={Transport} />
+            <Route path="/wedding-party" exact component={WeddingParty} />
+          </div>
+        </EnsureLoggedInContainer>
       </div>
     </Router>
     <AppFooter>
       <Footer />
     </AppFooter>
+
     <MusicPlayer />
   </AppContainer>
 ), document.getElementById('root'));

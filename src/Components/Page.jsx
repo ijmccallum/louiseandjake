@@ -20,7 +20,7 @@ function Page(props){
     picUrl += '/images/';
   }
   picUrl += props.heroPic;
-  
+
   const PageHero = styled.div`
     position: absolute;
     width: 100%;

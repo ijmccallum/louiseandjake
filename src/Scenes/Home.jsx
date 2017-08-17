@@ -10,6 +10,7 @@ class Home extends Component {
         backgroundSize="contain"
         isLive={this.props.isLive}
       >
+        {String(this.props.isLive)}
         September 1st 2018
       </Page>
     );

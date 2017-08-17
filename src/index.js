@@ -56,7 +56,7 @@ class App extends React.Component {
     const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     const devUrl = "localhost";
     let isLive = true;
-    if (document.location.host.indexOf(devUrl) !== -1) {
+    if (document.location.host.indexOf(devUrl) > -1) {
       isLive = false;
     }
     

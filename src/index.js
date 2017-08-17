@@ -35,11 +35,6 @@ const AppContainer = styled.main`
 const AppHeader = styled.header`
   padding: 4px;
   color: white;
-  position: absolute;
-  z-index: 10;
-  top: 0;
-  left: 0;
-  right: 0;
 `;
 
 const AppFooter = styled.footer`

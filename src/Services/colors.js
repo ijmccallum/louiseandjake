@@ -3,6 +3,7 @@
 const primary = "#d7b361";
 const primaryshadow = "#ede6d4";
 const white = "#fdfffc";
+const copy = "#ac8e71";
 
 export default {
   nav: {
@@ -19,11 +20,11 @@ export default {
     textshadow: primaryshadow
   },
   body: {
-    text: "#bbbbbd",
+    text: copy,
     background: white
   },
   header_text: "#e8bc44", 
-  text: "#bbbbbd",
+  text: copy,
   background: "#fdfffc",
   footer_background: "#d7b361"
 }

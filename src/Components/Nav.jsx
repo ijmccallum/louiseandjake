@@ -10,6 +10,7 @@ const history = createHashHistory();
 
 const NavWrap = styled.div`
   position: fixed;
+  z-index: 10;
   top: 0; bottom: 0;
   left: 0; right: 0;
   display: flex;
@@ -19,6 +20,12 @@ const NavWrap = styled.div`
   text-align: center;
   background-color: ${Colors.nav.background};
   opacity: 0.95;
+  @media (min-width: 1000px) {
+    flex-direction: row;
+    padding: 5px;
+    position: static;
+    width: 100%;
+  }
 `;
 
 const Close = styled.button`
@@ -33,10 +40,15 @@ const Close = styled.button`
     width: 10px; height; 10px;
     fill: ${Colors.nav.text};
   }
+  @media (min-width: 1000px) {
+    display: none;
+  }
 `;
 
 const Menu = Close.extend`
   right: 10px;
+  position: absolute;
+  z-index: 5;
   svg {
     width: 15px; height: 15px;
     fill: ${Colors.nav.text};
@@ -70,31 +82,31 @@ class Nav extends Component{
   }
 
   render() {
-    if (!this.state.isOpen) {
+    if (this.state.isOpen || document.documentElement.clientWidth > 1000) {
       return (
-        <Menu onClick={this.handleOpen}>
-          <Icons.Ham />
-        </Menu>
-      );
+        <NavWrap>
+          <div>
+            <Close onClick={this.handleClose}>
+              <Icons.X />
+            </Close>
+          </div>
+          <NavLink url="/" text="Louise & Jake" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/accommodation" text="Accomodation" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/gifts" text="Gifts" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/music" text="Music" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/rsvp" text="RSVP" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/transport" text="Transport" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props} handleClick={this.handleLinkClick} />
+        </NavWrap>
+);
     }
     return (
-      <NavWrap>
-        <div>
-          <Close onClick={this.handleClose}>
-            <Icons.X />
-          </Close>
-        </div>
-        <NavLink url="/" text="Louise & Jake" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/accommodation" text="Accomodation" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/gifts" text="Gifts" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/music" text="Music" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/rsvp" text="RSVP" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/transport" text="Transport" routeProps={this.props} handleClick={this.handleLinkClick} />
-        <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props} handleClick={this.handleLinkClick} />
-      </NavWrap>
-    )
+      <Menu onClick={this.handleOpen}>
+        <Icons.Ham />
+      </Menu>
+    );
   }
 }
 

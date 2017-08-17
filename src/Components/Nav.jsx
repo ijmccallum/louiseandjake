@@ -17,7 +17,7 @@ const NavWrap = styled.div`
   justify-content: space-around;
   padding: 70px 0;
   text-align: center;
-  background-color: ${Colors.white};
+  background-color: ${Colors.nav.background};
   opacity: 0.95;
 `;
 
@@ -31,7 +31,7 @@ const Close = styled.button`
   padding: 10px 20px;
   svg {
     width: 10px; height; 10px;
-    fill: ${Colors.gold1};
+    fill: ${Colors.nav.text};
   }
 `;
 
@@ -39,7 +39,7 @@ const Menu = Close.extend`
   right: 10px;
   svg {
     width: 15px; height: 15px;
-    fill: ${Colors.white};
+    fill: ${Colors.nav.text};
   }
 `;
 

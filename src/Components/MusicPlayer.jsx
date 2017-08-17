@@ -9,6 +9,11 @@ export default function MusicPlayer(props){
   const BackgroundMusic = styled.div`
     position: absolute;
     z-index: -2;
+    overflow: hidden;
+    iframe {
+      position: absolute;
+      top: -100px;
+    }
   `;
 
   return (

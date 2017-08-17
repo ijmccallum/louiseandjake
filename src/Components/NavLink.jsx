@@ -7,7 +7,7 @@ import Colors from '../Services/colors';
 
 const StyledLink = styled.button`
   padding: 10px;
-  color: ${Colors.gold1};
+  color: ${Colors.nav.text};
   display: inline-block;
   text-decoration: none;
   text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
@@ -20,7 +20,7 @@ const StyledLink = styled.button`
 
 const StyledActiveLink = StyledLink.extend`
   font-weight: bold;
-  border-color: ${Colors.white};
+  border-color: ${Colors.nav.text};
 `;
 
 export default function NavLink(props){

@@ -29,6 +29,7 @@ const AppContainer = styled.main`
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  color: ${Colors.text};
 `;
 
 const AppHeader = styled.header`
@@ -43,7 +44,7 @@ const AppHeader = styled.header`
 
 const AppFooter = styled.footer`
   margin-top: auto;
-  background-color: ${Colors.gold1};
+  background-color: ${Colors.footer_background};
   padding: 4px;
   color: white;
 `;

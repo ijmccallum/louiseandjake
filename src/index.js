@@ -55,10 +55,14 @@ class App extends React.Component {
 
     const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1");
     const devUrl = "localhost";
+    let isLive = true;
+    if (document.location.host.indexOf(devUrl) !== -1) {
+      isLive = false;
+    }
     
     this.state = {
       isLoggedIn: (loggedInCookie == '1'),
-      isLive: (document.location.host.indexOf(devUrl) == -1)
+      isLive: isLive
     }
     this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);

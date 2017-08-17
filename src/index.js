@@ -52,9 +52,13 @@ const AppFooter = styled.footer`
 class App extends React.Component {
   constructor(props) {
     super(props);
+
     const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1");
+    const devUrl = "localhost";
+    
     this.state = {
-      isLoggedIn: (loggedInCookie == '1')
+      isLoggedIn: (loggedInCookie == '1'),
+      isLive: (document.location.host.indexOf(devUrl) == -1)
     }
     this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
@@ -83,17 +87,22 @@ class App extends React.Component {
               <Route path="/" component={Nav} />
             </AppHeader>
     
-            <EnsureAuth.Body isLoggedIn={this.state.isLoggedIn} handleLogin={this.handleLogin} handleLogout={this.handleLogout}>
+            <EnsureAuth.Body 
+              isLive={this.state.isLive}
+              isLoggedIn={this.state.isLoggedIn} 
+              handleLogin={this.handleLogin} 
+              handleLogout={this.handleLogout}
+            >
               <div>
-                <Route path="/" exact component={Home} />
-                <Route path="/dundas-castle" exact component={DundasCastle} />
-                <Route path="/accommodation" exact component={Accommodation} />
-                <Route path="/edinburgh" exact component={Edinburgh} />
-                <Route path="/gifts" exact component={Gifts} />
-                <Route path="/music" exact component={Music} />
-                <Route path="/rsvp" exact component={RSVP} />
-                <Route path="/transport" exact component={Transport} />
-                <Route path="/wedding-party" exact component={WeddingParty} />
+                <Route path="/" exact render={() => <Home isLive={this.state.isLive} />} />
+                <Route path="/dundas-castle" exact render={() => <DundasCastle isLive={this.state.isLive} />} />
+                <Route path="/accommodation" exact render={() => <Accommodation isLive={this.state.isLive} />} />
+                <Route path="/edinburgh" exact render={() => <Edinburgh isLive={this.state.isLive} />} />
+                <Route path="/gifts" exact render={() => <Gifts isLive={this.state.isLive} />} />
+                <Route path="/music" exact render={() => <Music isLive={this.state.isLive} />} />
+                <Route path="/rsvp" exact render={() => <RSVP isLive={this.state.isLive} />} />
+                <Route path="/transport" exact render={() => <Transport isLive={this.state.isLive} />} />
+                <Route path="/wedding-party" exact render={() => <WeddingParty isLive={this.state.isLive} />} />
               </div>
             </EnsureAuth.Body>
           </div>

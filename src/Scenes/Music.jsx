@@ -4,7 +4,12 @@ import Page from '../Components/Page.jsx';
 class Music extends Component {
   render() {
     return (
-      <Page title="Music" heroPic="dundas.jpg" backgroundSize="cover">
+      <Page 
+        title="Music" 
+        heroPic="dundas.jpg" 
+        backgroundSize="cover"
+        isLive={this.props.isLive}
+      >
         ding dong ping pong
       </Page>
     );

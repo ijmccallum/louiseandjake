@@ -21,15 +21,14 @@ const LogOutBtn = styled.button`
 `;
 
 function LogOut(props) {
-  let devUrl = "localhost";
-  if (document.location.host.indexOf(devUrl) !== -1 ) {
+  if (props.isLive) {
+    return null;
+  } else {
     return (
       <LogOutBtn onClick={props.handleLogout}>
         <Icons.X />
       </LogOutBtn>
     );
-  } else {
-    return null;
   }
 }
 
@@ -45,7 +44,7 @@ class Body extends Component {
       return (
         <div>
           {this.props.children}
-          <LogOut handleLogout={this.props.handleLogout} />
+          <LogOut handleLogout={this.props.handleLogout} isLive={this.props.isLive} />
         </div>
       );
     } else {

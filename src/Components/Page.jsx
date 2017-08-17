@@ -13,13 +13,21 @@ function Page(props){
     text-shadow: -2px 1px 0 rgba(0,0,0,0.2);
   `;
   
+  let picUrl = '';
+  if (props.isLive) {
+    picUrl += '/public/images/';
+  } else {
+    picUrl += '/images/';
+  }
+  picUrl += props.heroPic;
+  
   const PageHero = styled.div`
     position: absolute;
     width: 100%;
     top: 0;
     bottom: 0;
     z-index: -1;
-    background-image: url('/images/${props.heroPic}');
+    background-image: url('${picUrl}');
     background-color: ${Colors.gold3};
     background-blend-mode: soft-light;
     background-size: ${props.backgroundSize};

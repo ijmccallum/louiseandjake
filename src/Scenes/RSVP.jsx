@@ -4,7 +4,12 @@ import Page from '../Components/Page.jsx';
 class RSVP extends Component {
   render() {
     return (
-      <Page title="RSVP" heroPic="dundas.jpg" backgroundSize="cover">
+      <Page 
+        title="RSVP" 
+        heroPic="dundas.jpg" 
+        backgroundSize="cover"
+        isLive={this.props.isLive}
+      >
         RSVP copy...
       </Page>
     );

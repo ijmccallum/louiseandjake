@@ -8,14 +8,40 @@ class Gifts extends Component {
     
     `;
     return (
-      <Page title="Gifts" heroPic="piggies.jpg" backgroundSize="contain">
+      <Page 
+        title="Gifts" 
+        heroPic="piggies.jpg" 
+        backgroundSize="contain"
+        isLive={this.props.isLive}
+      >
         <Poem>
-          We’ll be husband and wife for the rest of our life,<br />
-          In our little home made for two.<br />
-          But instead of a vase or a new kitchen knife,<br />
-          We’d love to fly off to somewhere new.<br />
-          A week on a beach would suffice and be ideal,<br />
-          Instead of a knife, fork and spoon why not contribute to our honeymoon!<br />
+          We tried to make a wedding list<br />
+          of presents you might buy,<br />
+          But couldn't think of what we'd like<br />
+          and here's the reason why.<br />
+          We have all of our bedding,<br />
+          a microwave and pots.<br />
+          The toaster's working perfectly,<br />
+          the kettle still gets hot.<br />
+          But here's some things we'd love to have,<br />
+          The list is only three,<br />
+          The first is sand, the next is sun,<br />
+          and thirdly there's the sea.<br />
+          <br />
+          Now please don't think us cheeky,<br />
+          We're trying to do this with tact,<br />
+          But we've been living together a while now,<br />
+          So there isn't much we lack.<br />
+          <br />
+          Even though it's not traditional,<br />
+          and not the way it's done..<br />
+          We'd appreciate a little help<br />
+          To spend time in Mauritius sun.<br />
+          <br />
+          So if you would like to give a gift<br />
+          And send us on our way;<br />
+          a contribution to our honeymoon,<br />
+          Would really make our day!<br />
         </Poem>
       </Page>
     );

@@ -4,7 +4,12 @@ import Page from '../Components/Page.jsx';
 class Home extends Component {
   render() {
     return (
-      <Page title="Louise & Jake" heroPic="louise-jake.jpg" backgroundSize="contain">
+      <Page 
+        title="Louise & Jake" 
+        heroPic="louise-jake.jpg" 
+        backgroundSize="contain"
+        isLive={this.props.isLive}
+      >
         September 1st 2018
       </Page>
     );

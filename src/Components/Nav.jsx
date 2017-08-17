@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import createHashHistory from 'history/createHashHistory';
 import styled from 'styled-components';
 import Layouts from './Layouts';
 import Icons from './Icons';
 import Colors from '../Services/colors';
 import NavLink from './NavLink';
+import createHashHistory from 'history/createHashHistory';
 const history = createHashHistory();
 
 const NavWrap = styled.div`

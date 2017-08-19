@@ -5,12 +5,12 @@ import Layouts from './Layouts';
 import Icons from './Icons';
 import Colors from '../Services/colors';
 
+// text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
 const StyledLink = styled.button`
   padding: 10px;
   color: ${Colors.nav.text};
   display: inline-block;
   text-decoration: none;
-  text-shadow: -1px 1px 2px rgba(0,0,0,0.2);
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
   background-color: transparent;

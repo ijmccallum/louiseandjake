@@ -23,6 +23,7 @@ export default {
     text: copy,
     background: white
   },
+  rule: primaryshadow,
   header_text: "#e8bc44", 
   text: copy,
   background: "#fdfffc",

@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import styled from 'styled-components';
 import Colors from '../Services/colors';
-import Page from './Page.jsx';
+import PageTitle from './PageTitle.jsx';
+import Fonts from '../Services/fonts';
 
 const Background = styled.div`
   position: absolute;
@@ -18,6 +19,16 @@ const Background = styled.div`
   padding: 30px;
   color: ${Colors.white};
   text-shadow: -2px 1px 0 rgba(0,0,0,0.2);
+`;
+
+const Title = styled.h1`
+  font-family: ${Fonts.cursive};
+  font-weight: 400;
+  font-size: 70px;
+  text-align: center;
+  position: relative;
+  color: white;
+  margin: 20px 10px;
 `;
 
 class Login extends Component {
@@ -43,9 +54,9 @@ class Login extends Component {
   render() {
     return (
       <Background>
-        <h2>Louise & Jake</h2>
+        <Title>Louise & Jake</Title>
         <p>Password</p>
-        <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="password"/>
+        <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="password" style={{"padding": "7px 10px"}}/>
       </Background>
     );
   }

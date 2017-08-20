@@ -13,9 +13,9 @@ class Gifts extends Component {
     `;
     return (
       <div>
-        <PageTitle>Playlist Requests</PageTitle>
+        <PageTitle>Gifts</PageTitle>
 
-        <HeroPic fileName={"dundas.jpg"}/>
+        <HeroPic fileName={"piggies.jpg"}/>
 
         <Layouts.ContentWidthWrapper>
           <Section>

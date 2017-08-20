@@ -1,17 +1,25 @@
 import React, { Component } from 'react';
-import Page from '../Components/Page.jsx';
+import Layouts from '../Components/Layouts';
+import HeroPic from '../Components/HeroPic.jsx';
+import PageTitle from '../Components/PageTitle.jsx';
+import SubTitle from '../Components/SubTitle.jsx';
+import Section from '../Components/Section.jsx';
 
 class Music extends Component {
   render() {
     return (
-      <Page 
-        title="Music" 
-        heroPic="dundas.jpg" 
-        backgroundSize="cover"
-        isLive={this.props.isLive}
-      >
-        ding dong ping pong
-      </Page>
+      <div>
+        <PageTitle>Playlist Requests</PageTitle>
+
+        <HeroPic fileName={"dundas.jpg"}/>
+
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>http://www.baltikceilidhband.com</p>
+            <p>Please leave your song suggestions for the evening!</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
+      </div>
     );
   }
 }

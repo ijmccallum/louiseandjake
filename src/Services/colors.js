@@ -3,18 +3,24 @@
 const primary = "#d7b361";
 const primaryshadow = "#ede6d4";
 const white = "#fdfffc";
-const copy = "#ac8e71";
-
+const darkGreen = "#49715d";
+//const copy = "#ac8e71";
+const copy = "#666";
+const tint = "#af8532";
+//c9a342
 export default {
   nav: {
-    text: primary,
+    text: darkGreen,
+    closebg: "rgba(255,255,255,0.9)",
     background: white
   },
-  gold1: primary,
-  gold2: "#c9a342",
-  white: "#fdfffc",
-  gold3: "#af8532",
-  gold4: "#e8bc44",
+  header_text: "#e8bc44", 
+  text: copy,
+  subTitle: darkGreen,
+  rule: primaryshadow,
+  white: white,
+  tint: tint,
+  background: "#fdfffc",
   hero: {
     text: primary,
     textshadow: primaryshadow
@@ -23,9 +29,14 @@ export default {
     text: copy,
     background: white
   },
-  rule: primaryshadow,
-  header_text: "#e8bc44", 
-  text: copy,
-  background: "#fdfffc",
-  footer_background: "#d7b361"
+  footer: {
+    background: white,
+    text: "black",
+    day: {
+      weekend: primary,
+      week: primary,
+      outside: primaryshadow,
+      highlight: primary
+    }
+  },
 }

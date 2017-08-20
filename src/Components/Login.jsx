@@ -37,9 +37,7 @@ class Login extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      value: '',
-      pass: 'dundaswedding2018',
-      lazyPass: 'dev'
+      value: ''
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -48,7 +46,7 @@ class Login extends Component {
   handleChange(event) {
     this.setState({value: event.target.value});
 
-    if (event.target.value === this.state.pass || event.target.value === this.state.lazyPass) {
+    if (event.target.value === "dundaswedding2018" || event.target.value === "Dundaswedding2018" || event.target.value === "dev" || event.target.value === "Dev" ) {
       this.props.successHandler();
     }
   }

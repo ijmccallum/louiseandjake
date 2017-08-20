@@ -10,6 +10,7 @@ export default function HeroPic(props){
     img {
       display: block;
       margin: 0 auto; 
+      max-width: 100%;
       max-height: 700px;
       border: 8px solid rgb(255, 255, 255);
       box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;

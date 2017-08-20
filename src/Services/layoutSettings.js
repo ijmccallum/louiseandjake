@@ -1,3 +1,3 @@
 export default {
-  contentWidth: "1200px"
+  contentWidth: "800px"
 }

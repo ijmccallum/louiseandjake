@@ -11,6 +11,7 @@ import Footer from './Components/Footer.jsx';
 import MusicPlayer from './Components/MusicPlayer.jsx';
 import Icons from './Components/Icons.jsx';
 import EnsureAuth from './Components/EnsureAuth.jsx';
+import LogOutBtn from './Components/LogOutBtn.jsx';
 
 //Scenes
 import Home from './Scenes/Home.jsx';
@@ -25,6 +26,18 @@ import WeddingParty from './Scenes/WeddingParty.jsx';
 
 const history = createHashHistory();
 
+if (document.location.host.indexOf("localhost") > -1) {
+  window.isLive = false;
+} else {
+  window.isLive = true;
+}
+
+if (window.isLive) {
+  window.imgRoot = '/public/images';
+} else {
+  window.imgRoot = '/images';
+}
+
 const AppContainer = styled.main`
   display: flex;
   flex-direction: column;
@@ -33,15 +46,16 @@ const AppContainer = styled.main`
 `;
 
 const AppHeader = styled.header`
-  padding: 4px;
-  color: white;
+  img {
+    display: block;
+    margin: 0 auto -25px;
+    max-width: 100%;
+  }
 `;
+
 
 const AppFooter = styled.footer`
   margin-top: auto;
-  background-color: ${Colors.footer_background};
-  padding: 4px;
-  color: white;
 `;
 
 
@@ -49,16 +63,9 @@ class App extends React.Component {
   constructor(props) {
     super(props);
 
-    const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1");
-    const devUrl = "localhost";
-    let isLive = true;
-    if (document.location.host.indexOf(devUrl) > -1) {
-      isLive = false;
-    }
-    
+    const loggedInCookie = document.cookie.replace(/(?:(?:^|.*;\s*)l\s*\=\s*([^;]*).*$)|^.*$/, "$1"); 
     this.state = {
-      isLoggedIn: (loggedInCookie == '1'),
-      isLive: isLive
+      isLoggedIn: (loggedInCookie == '1')
     }
     this.handleLogin = this.handleLogin.bind(this);
     this.handleLogout = this.handleLogout.bind(this);
@@ -84,25 +91,24 @@ class App extends React.Component {
         <Router history={history}>
           <div>
             <AppHeader>
-              <Route path="/" component={Nav} />
+              <img src={`${window.imgRoot}/flowers.jpg`} />
+              <Route path="/" render={(routeProps) => <Nav routeProps={routeProps} handleLogout={this.handleLogout} />} />
             </AppHeader>
     
             <EnsureAuth.Body 
-              isLive={this.state.isLive}
               isLoggedIn={this.state.isLoggedIn} 
               handleLogin={this.handleLogin} 
-              handleLogout={this.handleLogout}
             >
               <div>
-                <Route path="/" exact render={() => <Home isLive={this.state.isLive} />} />
-                <Route path="/dundas-castle" exact render={() => <DundasCastle isLive={this.state.isLive} />} />
-                <Route path="/accommodation" exact render={() => <Accommodation isLive={this.state.isLive} />} />
-                <Route path="/edinburgh" exact render={() => <Edinburgh isLive={this.state.isLive} />} />
-                <Route path="/gifts" exact render={() => <Gifts isLive={this.state.isLive} />} />
-                <Route path="/music" exact render={() => <Music isLive={this.state.isLive} />} />
-                <Route path="/rsvp" exact render={() => <RSVP isLive={this.state.isLive} />} />
-                <Route path="/transport" exact render={() => <Transport isLive={this.state.isLive} />} />
-                <Route path="/wedding-party" exact render={() => <WeddingParty isLive={this.state.isLive} />} />
+                <Route path="/" exact render={() => <Home />} />
+                <Route path="/dundas-castle" exact render={() => <DundasCastle />} />
+                <Route path="/accommodation" exact render={() => <Accommodation />} />
+                <Route path="/edinburgh" exact render={() => <Edinburgh />} />
+                <Route path="/gifts" exact render={() => <Gifts />} />
+                <Route path="/music" exact render={() => <Music />} />
+                <Route path="/rsvp" exact render={() => <RSVP />} />
+                <Route path="/transport" exact render={() => <Transport />} />
+                <Route path="/wedding-party" exact render={() => <WeddingParty />} />
               </div>
             </EnsureAuth.Body>
           </div>

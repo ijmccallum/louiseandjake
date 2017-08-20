@@ -9,7 +9,7 @@ const Background = styled.div`
   z-index: 1;
   top: 0; bottom: 0;
   left: 0; right: 0;
-  background-image: url('/images/dundas.jpg');
+  background-image: url('/public/images/dundas.jpg');
   background-color: ${Colors.tint};
   background-blend-mode: soft-light;
   background-size: cover;
@@ -32,6 +32,8 @@ const Title = styled.h1`
 `;
 
 class Login extends Component {
+  
+
   constructor(props) {
     super(props);
     this.state = {

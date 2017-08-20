@@ -5,6 +5,7 @@ import Layouts from './Layouts';
 import Icons from './Icons';
 import Colors from '../Services/colors';
 import NavLink from './NavLink';
+import LogOutBtn from './LogOutBtn.jsx';
 import createHashHistory from 'history/createHashHistory';
 const history = createHashHistory();
 
@@ -18,9 +19,10 @@ const NavWrap = styled.div`
   justify-content: space-around;
   padding: 70px 0;
   text-align: center;
-  background-color: ${Colors.nav.background};
   opacity: 0.95;
+  background-color: ${Colors.nav.background};
   @media (min-width: 1000px) {
+    background-color: transparent;
     flex-direction: row;
     padding: 5px;
     position: static;
@@ -29,13 +31,14 @@ const NavWrap = styled.div`
 `;
 
 const Close = styled.button`
-  padding: 0; border: 0;
-  background-color: transparent;
+  border: 0;
+  background-color: ${Colors.nav.closebg};
   cursor: pointer;
   position: absolute;
   right: 12px;
   top: 10px;
-  padding: 10px 20px;
+  padding: 7px 15px 6px;
+  border-radius: 5px;
   svg {
     width: 10px; height; 10px;
     fill: ${Colors.nav.text};
@@ -84,21 +87,24 @@ class Nav extends Component{
   render() {
     if (this.state.isOpen || document.documentElement.clientWidth > 1000) {
       return (
-        <NavWrap>
+        <NavWrap className="serif">
           <div>
             <Close onClick={this.handleClose}>
               <Icons.X />
             </Close>
           </div>
-          <NavLink url="/" text="Louise & Jake" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/accommodation" text="Accomodation" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/gifts" text="Gifts" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/music" text="Music" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/rsvp" text="RSVP" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/transport" text="Transport" routeProps={this.props} handleClick={this.handleLinkClick} />
-          <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props} handleClick={this.handleLinkClick} />
+          <NavLink url="/" text="Louise & Jake" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/accommodation" text="Accomodation" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/transport" text="Travel & Directions" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/gifts" text="Gifts" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/music" text="Playlist Requests" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/rsvp" text="RSVP" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <div>
+            <LogOutBtn handleLogout={this.props.handleLogout}>Logout</LogOutBtn>
+          </div>
         </NavWrap>
 );
     }

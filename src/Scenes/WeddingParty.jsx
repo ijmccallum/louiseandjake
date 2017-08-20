@@ -1,17 +1,27 @@
 import React, { Component } from 'react';
-import Page from '../Components/Page.jsx';
+import Layouts from '../Components/Layouts';
+import HeroPic from '../Components/HeroPic.jsx';
+import PageTitle from '../Components/PageTitle.jsx';
+import SubTitle from '../Components/SubTitle.jsx';
+import Section from '../Components/Section.jsx';
+import styled from 'styled-components';
 
 class WeddingParty extends Component {
   render() {
     return (
-      <Page 
-        title="WeddingParty" 
-        heroPic="dundas.jpg" 
-        backgroundSize="cover"
-        isLive={this.props.isLive}
-      >
-        WeddingParty copy...
-      </Page>
+      <div>
+        <PageTitle>Wedding Party</PageTitle>
+
+        <HeroPic fileName={"dundas.jpg"}/>
+
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>
+              images & names to come!
+            </p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
+      </div>
     );
   }
 }

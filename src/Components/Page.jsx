@@ -6,7 +6,7 @@ import Colors from '../Services/colors.js'
 function Page(props){
 
   let picUrl = '';
-  if (props.isLive) {
+  if (window.isLive) {
     picUrl += '/public/images/';
   } else {
     picUrl += '/images/';

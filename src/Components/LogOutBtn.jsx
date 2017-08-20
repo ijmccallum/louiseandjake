@@ -21,13 +21,13 @@ const LogOutButton = styled.button`
 `;
 
 export default function LogOutBtn(props) {
-  if (window.isLive) {
-    return null;
-  } else {
+  // if (window.isLive) {
+  //   return null;
+  // } else {
     return (
       <LogOutButton onClick={props.handleLogout}>
         Log out
       </LogOutButton>
     );
-  }
+  //}
 }

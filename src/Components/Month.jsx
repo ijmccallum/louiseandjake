@@ -2,6 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Day from './Day.jsx';
 import moment from 'moment';
+import Colors from '../Services/colors.js';
+import Fonts from '../Services/fonts';
 
 export default function Month(props){
 
@@ -49,6 +51,8 @@ export default function Month(props){
     line-height: 1;
     margin-bottom: 5px;
     text-align: center;
+    font-family: ${Fonts.serif};
+    color: ${Colors.footer.text};
   `;
 
   return (

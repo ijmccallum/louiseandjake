@@ -34,7 +34,7 @@ export default function Countdown(props){
     line-height: 0;
     font-size: 0;
     text-align: center;
-    padding: 20px 10px;
+    padding: 40px 10px;
   `;
 
   return (

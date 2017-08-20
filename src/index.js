@@ -90,7 +90,7 @@ class App extends React.Component {
 
         <Router history={history}>
           <div>
-            <EnsureAuth.Header>
+            <EnsureAuth.Header isLoggedIn={this.state.isLoggedIn}>
               <AppHeader>
                 <img src={`${window.imgRoot}/flowers.jpg`} />
                 <Route path="/" render={(routeProps) => <Nav routeProps={routeProps} handleLogout={this.handleLogout} />} />

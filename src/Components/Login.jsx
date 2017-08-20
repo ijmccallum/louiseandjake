@@ -9,7 +9,7 @@ const Background = styled.div`
   top: 0; bottom: 0;
   left: 0; right: 0;
   background-image: url('/images/dundas.jpg');
-  background-color: ${Colors.gold3};
+  background-color: ${Colors.tint};
   background-blend-mode: soft-light;
   background-size: cover;
   background-repeat: no-repeat;
@@ -43,8 +43,9 @@ class Login extends Component {
   render() {
     return (
       <Background>
-        <h2>Password</h2>
-        <input type="text" value={this.state.value} onChange={this.handleChange}/>
+        <h2>Louise & Jake</h2>
+        <p>Password</p>
+        <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="password"/>
       </Background>
     );
   }

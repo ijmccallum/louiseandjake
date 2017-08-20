@@ -8,7 +8,6 @@ export default function Day(props){
   const Day = styled.div`
     width: 10px;
     height: 10px;
-    background-color: ${Colors.white};
     display: inline-block;
     margin: 1px;
     overflow: hidden;
@@ -25,7 +24,7 @@ export default function Day(props){
   if (props.date.isSame(props.startDate)) {
     const EngagementDay = Day.extend`
       background-color: transparent;
-      fill: #fff;
+      fill: ${Colors.footer.day.highlight};
     `;
     //return (<EngagementDay />);
     return(
@@ -41,7 +40,7 @@ export default function Day(props){
   if (props.date.isSame(props.endDate)) {
     const WeddingDay = Day.extend`
       background-color: transparent;
-      fill: #fff;
+      fill: ${Colors.footer.day.highlight};
     `;
     //return (<WeddingDay />);
     return (
@@ -57,8 +56,7 @@ export default function Day(props){
   //if the day has passed, or is beyond the wedding day
   if (props.date.diff(moment()) < 0 || props.date.diff(props.endDate) > 0) {
     const OutDay = Day.extend`
-      background-color: ${Colors.gold3};
-      opacity: 0.3;
+      background-color: ${Colors.footer.day.outside};
     `;
     return (<OutDay />);
   }
@@ -67,13 +65,13 @@ export default function Day(props){
   var isWeekend = (day == 6) || (day == 0);
   if (isWeekend) {
     const WeekendDay = Day.extend`
-      background-color: ${Colors.white};
+      background-color: ${Colors.footer.day.weekend};
     `;
     return (<WeekendDay />);
   }
 
   const WeekDay = Day.extend`
-    opacity: 0.5;
+    background-color: ${Colors.footer.day.week};
   `;
   // just a boring old normal day
   return (<WeekDay />);

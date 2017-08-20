@@ -33,6 +33,14 @@ function Footer(props){
   }
 }
 
+function Header(props){
+  if (props.isLoggedIn) {
+    return props.children;
+  } else {
+    return null;
+  }
+}
+
 export default {
-  Body, Footer
+  Body, Footer, Header
 }

@@ -9,7 +9,8 @@ class Home extends Component {
     return (
       <div>
         <PageTitle>
-          Louise & Jake’s<br />Wedding
+          {/* Louise & Jake’s<br />Wedding */}
+          <img src={`${window.imgRoot}/glitter.png`} />
         </PageTitle>
 
         <SubTitle>

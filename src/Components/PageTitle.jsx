@@ -13,6 +13,7 @@ export default function PageTitle(props){
     color: ${Colors.hero.text};
     text-shadow: -2px 1px 0 ${Colors.hero.textshadow};
     margin: 20px 10px;
+    img { max-width: 100%; }
   `;
 
   return (

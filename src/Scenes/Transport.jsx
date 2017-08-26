@@ -1,18 +1,26 @@
 import React, { Component } from 'react';
 import Layouts from '../Components/Layouts';
 import HeroPic from '../Components/HeroPic.jsx';
+import Image from '../Components/Image.jsx';
 import PageTitle from '../Components/PageTitle.jsx';
 import SubTitle from '../Components/SubTitle.jsx';
 import Section from '../Components/Section.jsx';
+import styled from 'styled-components';
 
+const Map = styled.div`
+  iframe {
+    margin: 0;
+    display: block;
+  }
+`;
 
 class Transport extends Component {
   render() {
     return (
       <div>
-        <PageTitle>Travel & Directions</PageTitle>
+        {/* <PageTitle>Travel & Directions</PageTitle> */}
 
-        <HeroPic fileName={"dundas.jpg"}/>
+        <Image fileName={"travel.jpg"}/>
 
         <Layouts.ContentWidthWrapper>
           <Section>
@@ -54,6 +62,10 @@ class Transport extends Component {
             </div>
           </Section>
         </Layouts.ContentWidthWrapper>
+
+        <Map>
+          <iframe src="https://snazzymaps.com/embed/10331" width="100%" height="300px" style={{border:0}}></iframe>
+        </Map>
       </div>
     );
   }

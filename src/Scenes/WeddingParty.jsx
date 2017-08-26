@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layouts from '../Components/Layouts';
 import HeroPic from '../Components/HeroPic.jsx';
+import Image from '../Components/Image.jsx';
 import PageTitle from '../Components/PageTitle.jsx';
 import SubTitle from '../Components/SubTitle.jsx';
 import Section from '../Components/Section.jsx';
@@ -10,9 +11,9 @@ class WeddingParty extends Component {
   render() {
     return (
       <div>
-        <PageTitle>Wedding Party</PageTitle>
+        {/* <PageTitle>Wedding Party</PageTitle> */}
 
-        <HeroPic fileName={"dundas.jpg"}/>
+        <Image fileName={"wedding-party.jpg"}/>
 
         <Layouts.ContentWidthWrapper>
           <Section>

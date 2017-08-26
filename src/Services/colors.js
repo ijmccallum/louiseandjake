@@ -15,6 +15,7 @@ export default {
     background: white
   },
   header_text: "#e8bc44", 
+  homeCopy: darkGreen,
   text: copy,
   subTitle: darkGreen,
   rule: primaryshadow,

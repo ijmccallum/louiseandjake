@@ -7,7 +7,8 @@ import SubTitle from '../Components/SubTitle.jsx';
 import Section from '../Components/Section.jsx';
 import Colors from '../Services/colors';
 import Bed from '../Components/Bed';
-
+import Border from '../Components/Border.jsx';
+import Image from '../Components/Image.jsx';
 const GridWrap =styled.div`
   display: flex;
   flex-direction: row;
@@ -32,9 +33,7 @@ class Accommodation extends Component {
   render() {
     return (
       <div>
-        <PageTitle>
-          Accomodation
-        </PageTitle>
+        <Image fileName="accom.jpg" />
 
         <HeroPic fileName={"dundas.jpg"}/>
 
@@ -147,6 +146,17 @@ class Accommodation extends Component {
 
           </GridWrap>  
         </Section>
+        <Border.Line />
+        <Layouts.ContentWidthWrapper>
+          <Section>
+          <SubTitle>
+            Edinburgh
+          </SubTitle>
+            <div style={{"text-align": "left"}}>
+              <p>The Edinburgh Fringe Festival takes place throughout August, finishing a few days before the wedding however you could have an extended stay North and enjoy the festival beforehand!</p>
+            </div>
+          </Section>
+        </Layouts.ContentWidthWrapper>
       </div>
     );
   }

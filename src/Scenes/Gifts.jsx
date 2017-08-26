@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Layouts from '../Components/Layouts';
 import HeroPic from '../Components/HeroPic.jsx';
+import Image from '../Components/Image.jsx';
 import PageTitle from '../Components/PageTitle.jsx';
 import SubTitle from '../Components/SubTitle.jsx';
 import Section from '../Components/Section.jsx';
@@ -13,7 +14,7 @@ class Gifts extends Component {
     `;
     return (
       <div>
-        <PageTitle>Gifts</PageTitle>
+        <Image fileName="gift-title.jpg" />
 
         <HeroPic fileName={"piggies.jpg"}/>
 

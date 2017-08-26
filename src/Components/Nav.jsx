@@ -27,6 +27,8 @@ const NavWrap = styled.div`
     padding: 5px;
     position: static;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
   }
 `;
 
@@ -94,14 +96,16 @@ class Nav extends Component{
             </Close>
           </div>
           <NavLink url="/" text="Louise & Jake" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/accommodation" text="Accomodation" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/transport" text="Travel & Directions" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/gifts" text="Gifts" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/music" text="Playlist Requests" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/rsvp" text="RSVP" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/travel" text="Travel" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/accommodation" text="Accommodation" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/gifts" text="Gifts" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+
+          {/* 
+          <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/music" text="Playlist Requests" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} /> */}
           <div>
             <LogOutBtn handleLogout={this.props.handleLogout}>Logout</LogOutBtn>
           </div>

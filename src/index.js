@@ -109,7 +109,7 @@ class App extends React.Component {
                 <Route path="/gifts" exact render={() => <Gifts />} />
                 <Route path="/music" exact render={() => <Music />} />
                 <Route path="/rsvp" exact render={() => <RSVP />} />
-                <Route path="/transport" exact render={() => <Transport />} />
+                <Route path="/travel" exact render={() => <Transport />} />
                 <Route path="/wedding-party" exact render={() => <WeddingParty />} />
               </div>
             </EnsureAuth.Body>

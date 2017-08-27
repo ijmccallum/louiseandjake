@@ -53,7 +53,7 @@ class DundasCastle extends Component {
               Edinburgh<br />
               EH30 9SP (for sat nav use EH30 9SS)<br />
               0131 319 2039<br />
-              www.dundascastle.co.uk<br />
+              <a href="http://dundascastle.co.uk/">www.dundascastle.co.uk</a><br />
             </p>
           </Section>
 

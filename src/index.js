@@ -43,6 +43,10 @@ const AppContainer = styled.main`
   flex-direction: column;
   min-height: 100vh;
   color: ${Colors.text};
+  a {
+    display: block;
+    color: ${Colors.subTitle};
+  }
 `;
 
 const AppHeader = styled.header`

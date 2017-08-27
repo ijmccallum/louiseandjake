@@ -49,7 +49,7 @@ class Gifts extends Component {
               a contribution to our honeymoon,<br />
               Would really make our day!<br />
             </Poem>
-            <p>https://www.weddingshop.com/find-a-list</p>
+            <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p>
           </Section>
         </Layouts.ContentWidthWrapper>
       </div>

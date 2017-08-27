@@ -59,7 +59,7 @@ class WeddingParty extends Component {
           </Party>
           <Party>
 
-            <Person name="Hayle" role="Hayle" placeholder="http://morganfillman.space/540">Hayle</Person>
+            <Person name="Hayle" role="Hayle" placeholder="http://morganfillman.space/540">Hayley</Person>
             <Person name="Amelia" role="Amelia" placeholder="http://morganfillman.space/542">Amelia</Person>
             <Person name="Will" role="Will" placeholder="http://morganfillman.space/544">Will</Person>
             <Person name="Graham" role="Graham" placeholder="http://morganfillman.space/546">Graham</Person>

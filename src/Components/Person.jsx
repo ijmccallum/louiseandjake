@@ -21,13 +21,15 @@ const PicRatio = styled.div`
   border-radius: 100%;
   overflow: hidden;
   margin: 0 0 20px;
+  border: 8px solid rgb(255, 255, 255);
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
 `;
 
 const Pic = styled.img`
   position: absolute;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  max-width: 100%;
+  top: 0; bottom: -8px;
+  left: -4px; right: -4px;
+  max-width: calc(100% + 16px);
 `;
 
 const Name = styled.div`
@@ -65,12 +67,11 @@ export default function Person(props){
           <Pic src={`${props.placeholder}`}/>
         }
       </PicRatio>
-      <Name>
-        {props.name},
-      </Name>
-      <Role>
-        {props.role}
-      </Role>
+
+      {props.name && <Name>{props.name},</Name>}
+      
+      {props.role && <Role>{props.role}</Role>}
+      
       <Description>
         {props.children}
       </Description>

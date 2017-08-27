@@ -55,7 +55,7 @@ class Home extends Component {
             <Image fileName="save-the-date.jpg"/>
 
             <SavyDaty>
-              1st September 2018<br />
+              <span style={{position: "relative", top: "-20px"}}>1st September 2018</span><br />
               Please join us to celebrate the marriage of
             </SavyDaty>
 
@@ -67,7 +67,7 @@ class Home extends Component {
               <Image fileName='ampersand.jpg' />
               </div>
               <Name>
-                Jake Edward Michael Shackleford
+                Jake Edward<br />Michael Shackleford
               </Name>
             </Names>
 

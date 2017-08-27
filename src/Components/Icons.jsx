@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import settings from '../Services/layoutSettings';
 
-
 function X(props){
   return (
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 348.333 348.334">
@@ -25,6 +24,36 @@ function Ham(props){
   );
 }
 
+function Phone(props){
+  const PhoneIcon = styled.div`
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    background-image: url(${window.imgRoot}/icons.jpg);
+    background-position: center right;
+  `;
+
+  return (
+    <PhoneIcon />
+  )
+}
+
+function Email(props){
+  const EmailIcon = styled.div`
+    display: inline-block;
+    vertical-align: middle;
+    width: 46px;
+    height: 46px;
+    background-image: url(${window.imgRoot}/icons.jpg);
+    background-position: center left;
+  `;
+
+  return (
+    <EmailIcon />
+  )
+}
+
 export default {
-  X, Ham
+  X, Ham, Phone, Email
 };

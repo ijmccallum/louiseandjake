@@ -8,7 +8,7 @@ export default function Section(props){
     position: relative;
     color: ${Colors.body.text};
     margin: 40px 10px;
-    p { 
+    p, li { 
       max-width: 600px;
       margin: 0 auto;
     }

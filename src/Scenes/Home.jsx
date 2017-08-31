@@ -14,16 +14,31 @@ import Border from '../Components/Border.jsx';
 const SavyDaty = styled.div`
   font-family: ${Fonts.serif};
   color: ${Colors.homeCopy};
-  font-size: 32px;
+  line-height:1;
+  font-size: 18px;
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 700px) {
+    font-size: 26px;
+  }
 `;
 
 const Names = styled.div`
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto;
   justify-content: center;
   align-items: center;
-  div {
-    margin: 10px;
+  flex-direction: column;
+  div { margin: 4px; }
+  img { max-width: 42px !important; }
+  @media (min-width: 350px) {
+    flex-direction: row;
+  }
+  @media (min-width: 500px) {
+    div { margin: 10px; }
+    margin: 0px auto;
+    img { max-width: 100px !important; }
   }
 `;
 
@@ -31,8 +46,14 @@ const Name = styled.div`
   font-family: ${Fonts.serif};
   color: ${Colors.homeCopy};
   text-transform: uppercase;
-  font-size: 26px;
   max-width: 300px;
+  font-size: 16px;
+  @media (min-width: 500px) {
+    font-size: 20px;
+  }
+  @media (min-width: 700px) {
+    font-size: 26px;
+  }
 `;
 
 class Home extends Component {
@@ -63,8 +84,8 @@ class Home extends Component {
               <Name>
                 Louise Kirsteen McCallum
               </Name>
-              <div>
-              <Image fileName='ampersand.jpg' />
+              <div style={{'min-width': '42px'}}>
+              <Image fileName='ampersand.jpg'/>
               </div>
               <Name>
                 Jake Edward<br />Michael Shackleford

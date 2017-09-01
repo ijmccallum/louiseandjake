@@ -80,7 +80,7 @@ class RSVP extends Component {
                 <li><BulLeft /><span>If you can attend our wedding as soon as you can.</span><BulRight /></li>
                 <li><BulLeft /><span>Also if you know you cannot.</span><BulRight /></li>
                 <li><BulLeft /><span>Any dietary requirements and/or allergies.</span><BulRight /></li>
-                <li><BulLeft /><span>What music you like!</span><BulRight /></li>
+                <li><BulLeft /><span>Any song requests or your favourite ceilidh dances!</span><BulRight /></li>
               </List>
             </p>
           </Section>

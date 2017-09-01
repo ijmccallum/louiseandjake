@@ -158,7 +158,7 @@ class Accommodation extends Component {
                 title="Hotel du Vin & Bistro"
                 description={
                   <div>
-                    <p>Just a short walk from the Royal Mile in Edinburgh, Hotel du Vin has 47 bedrooms and suites and is perfectly situated within the City Centre. With its trademark Bistro, the hotel offers a relaxing haven, serving the finest classic European cuisine. Dundas Castle is approximately a 25</p>
+                    <p>Just a short walk from the Royal Mile in Edinburgh, Hotel du Vin has 47 bedrooms and suites and is perfectly situated within the City Centre. With its trademark Bistro, the hotel offers a relaxing haven, serving the finest classic European cuisine. Dundas Castle is approximately a 25 drive from the Hotel du Vin.</p>
                   </div>
                 }
                 address={

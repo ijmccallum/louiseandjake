@@ -26,7 +26,7 @@ class WeddingParty extends Component {
             <Party>
               <Person name="" role="Father of the Bride: Peter McCallum" fileName="plj.jpg" />
               <Person name="" role="Mother of the Groom: Kate Shackleford Father of the Groom: Ian Shackleford" fileName="jlki.jpg" />
-              <Person name="" role="Late Mother of the Bride: Alexandra McCallum who we will missed forever but we have many happy memories of her to cherish." fileName="mum.jpg" />
+              <Person name="" role="Late Mother of the Bride: Alexandra McCallum who we will miss forever but we have many happy memories of her to cherish." fileName="mum.jpg" />
               <Person name="" role="Louise’s brother: Iain McCallum (Groomsman) Louise’s sister-in-law: Christina McCallum (Bridesmaid)" fileName="beach.jpg" />
               <Person name="" role="Jake’s sister: Hannah Shackleford (Maid of Honour), Hannah’s boyfriend: Andy Foulkes" fileName="ha.jpg" />
 

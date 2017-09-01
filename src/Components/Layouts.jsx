@@ -2,6 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import settings from '../Services/layoutSettings';
 
+const BigStyledWidthWrapper = styled.div`
+  max-width: ${settings.bigContentWidth};
+  margin: 0 auto;
+  width: 100%;
+`;
+function BigContentWidthWrapper(props){
+  return (
+    <BigStyledWidthWrapper>
+      {props.children}
+    </BigStyledWidthWrapper>
+  );
+}
+
 const StyledWidthWrapper = styled.div`
   max-width: ${settings.contentWidth};
   margin: 0 auto;
@@ -30,5 +43,6 @@ function ContentPadder(props){
 
 export default {
   ContentWidthWrapper,
-  ContentPadder
+  ContentPadder,
+  BigContentWidthWrapper
 };

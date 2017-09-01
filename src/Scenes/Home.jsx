@@ -98,14 +98,7 @@ class Home extends Component {
           </Section>
         </Layouts.ContentWidthWrapper>
         
-        <Border.Line />
-
-        <Layouts.ContentWidthWrapper>
-          <Section>
-            <SubTitle>Our Story</SubTitle>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto qui eius officia esse doloribus in assumenda minus ex, nulla, ullam debitis veniam. Temporibus incidunt ad delectus quam ea ipsam.</p>
-          </Section>
-        </Layouts.ContentWidthWrapper>
+        {/* <Border.Line /> */}
 
         <Layouts.ContentWidthWrapper>
           <Section>

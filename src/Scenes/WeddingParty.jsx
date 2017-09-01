@@ -23,60 +23,60 @@ class WeddingParty extends Component {
         <Image fileName={"wedding-party.jpg"}/>
 
         <Section>
-          <Party>
-            <Person name="" role="" fileName="Jake-lou-on-vacay.jpg" />
-            <Person name="" role="" fileName="Lou-Jake-in-south-africa.jpg" />
-            <Person name="" role="" fileName="Jake-Lou.jpg" />
-          </Party>
+          {/* <Party>
+          </Party> */}
           <Party>
 
-            <Person name="Jake-Pete-london" role="Jake-Pete-london" fileName="Jake-Pete-london.jpg" />
-            <Person name="Peter" role="Father of the Bride" fileName="sun.jpg">Left</Person>
+            <Person name="" role="Lloyd Stephenson (Best man)" fileName="bb.jpg" />
+            <Person name="" role="Jake’s sister: Hannah Shackleford (Maid of Honour), Hannah’s boyfriend: Andy Foulkes" fileName="ha.jpg" />
+            <Person name="" role="Louise’s God-mum: Margaret McCallum" fileName="m.jpg" />
+            <Person name="" role="Late Mother of the Bride: Alexandra McCallum who we will missed forever but we have many happy memories of her to cherish." fileName="mum.jpg" />
+            <Person name="" role="Louise’s cousin: Pamela McCallum (Bridesmaid)" fileName="p.jpg" />
+
             <Person name="Kate & Iain" role="Mother & Father of the groom" fileName="jlki.jpg">Right</Person>
             
             <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="beach.jpg">also in the party!</Person>
-            <Person name="Hannah & Andy" role="Maid of Honor" fileName="hannah.jpg">stuff</Person>
           </Party>
           <Party>
-            {/* <Person name="us-manayunk" role="us-manayunk" fileName="us-manayunk.jpg" /> */}
-            <Person name="Pamela" role="Pamela" fileName="pamela.jpg">Pamela</Person>
-            <Person name="Lloyd" role="Groomsman" fileName="lloyd.jpg">Best man</Person>
-            <Person name="Ell" role="Groomsman" fileName="ell.jpg">Best man</Person>
-            <Person name="Lloyd-Jake-Georgia-Louise" role="Lloyd-Jake-Georgia-Louise" fileName="Lloyd-Jake-Georgia-Louise.jpg" />
           </Party>
           <Party>
-            <Person name="Jake-and-pals-3" role="Jake-and-pals-3" fileName="Jake-and-pals-3.jpg" />
-            <Person name="jake-and-pals-2" role="jake-and-pals-2" fileName="jake-and-pals-2.jpg" />
-            <Person name="Jake-and-pals" role="Jake-and-pals" fileName="Jake-and-pals.jpg" />
+            <Person name="" role="Graham Kimber (Groomsman), Ell Heward (Best man), and Will Lloyd (Groomsman)" fileName="Jake-and-pals-3.jpg" />
 
           </Party>
           <Party>
 
             <Person name="Hayley-Amelia-Louise" role="Hayley-Amelia-Louise" fileName="Hayley-Amelia-Louise.jpg" />
-            <Person name="Louise-Hayley-Amelia" role="Louise-Hayley-Amelia" fileName="Louise-Hayley-Amelia.jpg" />
-            <Person name="Lou-Jake-Georgia-Lloyd" role="Lou-Jake-Georgia-Lloyd" fileName="Lou-Jake-Georgia-Lloyd.jpg" />
+            <Person name="" role="Bridesmaids: Hayley Martin, Amelia Mackin" fileName="Louise-Hayley-Amelia.jpg" />
 
-          </Party>
-          <Party>
-
-            <Person name="Hayle" role="Hayle" placeholder="http://morganfillman.space/540">Hayley</Person>
-            <Person name="Amelia" role="Amelia" placeholder="http://morganfillman.space/542">Amelia</Person>
-            <Person name="Will" role="Will" placeholder="http://morganfillman.space/544">Will</Person>
-            <Person name="Graham" role="Graham" placeholder="http://morganfillman.space/546">Graham</Person>
-
-          </Party>
-            {/* <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="us.jpg">
-              also in the party!
-            </Person>
-            <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="az.jpg">
-              also in the party!
-            </Person> */}
+          </Party>  
         </Section>
         <Section>
           <Party>
             
           </Party>
         </Section>
+
+        <hr />
+            <Person name="" role="" fileName="Jake-lou-on-vacay.jpg" />
+            <Person name="" role="" fileName="Lou-Jake-in-south-africa.jpg" />
+            <Person name="" role="" fileName="Jake-Lou.jpg" />
+             <Person name="Jake-Pete-london" role="Jake-Pete-london" fileName="Jake-Pete-london.jpg" />
+            <Person name="Peter" role="Father of the Bride" fileName="sun.jpg">Left</Person> 
+             <Person name="Hannah & Andy" role="Maid of Honor" fileName="hannah.jpg">stuff</Person> 
+             <Person name="us-manayunk" role="us-manayunk" fileName="us-manayunk.jpg" /> 
+             <Person name="Pamela" role="Pamela" fileName="pamela.jpg">Pamela</Person> 
+             <Person name="Lloyd" role="Groomsman" fileName="lloyd.jpg">Best man</Person>
+            <Person name="Ell" role="Groomsman" fileName="ell.jpg">Best man</Person> 
+             <Person name="Lloyd-Jake-Georgia-Louise" role="Lloyd-Jake-Georgia-Louise" fileName="Lloyd-Jake-Georgia-Louise.jpg" /> 
+             <Person name="jake-and-pals-2" role="jake-and-pals-2" fileName="jake-and-pals-2.jpg" /> 
+             <Person name="Jake-and-pals" role="Jake-and-pals" fileName="Jake-and-pals.jpg" /> 
+             <Person name="Lou-Jake-Georgia-Lloyds" role="Lou-Jake-Georgia-Lloyd" fileName="Lou-Jake-Georgia-Lloyd.jpg" /> 
+             <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="us.jpg">
+              also in the party!
+            </Person>
+            <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="az.jpg">
+              also in the party!
+            </Person> 
 
 
       </div>

@@ -9,31 +9,34 @@ const Room = styled.div`
   word-break: break-word;
   font-size: 18px;
 `;
-const Title = styled.p`
+const Title = styled.div`
   color: ${Colors.subTitle};
   text-transform: uppercase;
   font-family: ${Fonts.serif};
   font-size: 20px;
   margin: 0 0 10px;
 `;
-const Description = styled.div``;
+const Description = styled.div`
+  p {
+    margin-bottom: 10px !important;
+  }
+`;
 const Price = styled.div``;
 const Distance = styled.div``;
-const Address = styled.a``;
+const Address = styled.div``;
 const Url = styled.a`
   display: block;
   color: ${Colors.subTitle};
+  margin-bottom: 20px;
 `;
 
 function Bed(props){
   return (
     <Room>
-      <Title>{props.details.title}</Title>
-      <Description>{props.details.description}</Description>
-      <Price>{props.details.price}</Price>
-      <Distance>{props.details.distance}</Distance>
-      <Address>{props.details.address}</Address>
-      <Url href={`${props.details.url}`}>{props.details.url}</Url>
+      <Title>{props.title}</Title>
+      <Address>{props.address}</Address>
+      <Url href={`${props.url}`} target="_blank">{props.url}</Url>
+      <Description>{props.description}</Description>
     </Room>
   );
 }

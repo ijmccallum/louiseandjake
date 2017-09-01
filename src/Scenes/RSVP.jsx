@@ -14,28 +14,33 @@ class RSVP extends Component {
   render() {
     const List = styled.ul`
       list-style: none;
-      span:before {
-        content: " ";
-        display: inline-block;
-        width: 64px;
-        height: 19px;
-        vertical-align: middle;
-        background-image: url(${window.imgRoot}/bullet.jpg);
-        background-repeat: no-repeat;
-        background-position: center left;
-        opacity: 0.6;
+      padding: 0;
+      li {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
       }
-      span:after {
-        content: " ";
-        display: inline-block;
+      `;
+      
+      const BulRight = styled.div`
         width: 64px;
+        min-width: 64px;
         height: 19px;
-        vertical-align: middle;
         background-image: url(${window.imgRoot}/bullet-right.jpg);
         background-repeat: no-repeat;
         background-position: center left;
         opacity: 0.6;
-      }
+        @media (max-width: 500px) { display: none; }
+    `;
+      const BulLeft = styled.div`
+        width: 64px;
+        min-width: 64px;
+        height: 19px;
+        background-image: url(${window.imgRoot}/bullet.jpg);
+        background-repeat: no-repeat;
+        background-position: center left;
+        opacity: 0.6;
+        @media (max-width: 500px) { display: none; }
     `;
 
     return (
@@ -72,10 +77,10 @@ class RSVP extends Component {
             <p style={{"margin-bottom": "70px"}}>
               Please let us know:
               <List>
-                <li><span>If you can attend our wedding as soon as you can.</span></li>
-                <li><span>Also if you know you cannot.</span></li>
-                <li><span>Any dietary requirements and/or allergies.</span></li>
-                <li><span>What music you like!</span></li>
+                <li><BulLeft /><span>If you can attend our wedding as soon as you can.</span><BulRight /></li>
+                <li><BulLeft /><span>Also if you know you cannot.</span><BulRight /></li>
+                <li><BulLeft /><span>Any dietary requirements and/or allergies.</span><BulRight /></li>
+                <li><BulLeft /><span>What music you like!</span><BulRight /></li>
               </List>
             </p>
           </Section>

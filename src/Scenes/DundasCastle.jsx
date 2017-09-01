@@ -46,6 +46,8 @@ class DundasCastle extends Component {
 
         <Image fileName="dundas-title.jpg"/>
 
+        <HeroPic fileName={"dundas.jpg"}/>
+
         <Layouts.ContentWidthWrapper>
           <Section>
             <p>

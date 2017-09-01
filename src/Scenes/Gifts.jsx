@@ -48,9 +48,13 @@ class Gifts extends Component {
               And send us on our way;<br />
               a contribution to our honeymoon,<br />
               Would really make our day!<br />
+              <br />
             </Poem>
             <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p>
           </Section>
+          <br />
+          <HeroPic fileName={"holiday.jpg"}/>
+          <br /><br />
         </Layouts.ContentWidthWrapper>
       </div>
     );

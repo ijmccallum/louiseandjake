@@ -51,12 +51,12 @@ class RSVP extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <p><i>
+            <p>
               A little reminder so you don’t forget, <br />
               A night of celebration you won’t regret, <br />
               A quick email or text, you know what to do, <br />
               Will help us figure out which table's for you!
-            </i></p>
+            </p>
           </Section>
           <div style={{position: "relative", right: "21px", "margin-bottom": "-20px"}}>
             <Image fileName={"divide-left.jpg"}/>

@@ -20,7 +20,7 @@ class Gifts extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <Poem><i>
+            <Poem>
               We tried to make a wedding list<br />
               of presents you might buy,<br />
               But couldn't think of what we'd like<br />
@@ -48,7 +48,7 @@ class Gifts extends Component {
               And send us on our way;<br />
               a contribution to our honeymoon,<br />
               Would really make our day!<br />
-            </i></Poem>
+            </Poem>
             <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p>
           </Section>
         </Layouts.ContentWidthWrapper>

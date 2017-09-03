@@ -30,6 +30,7 @@ class WeddingParty extends Component {
               <Person name="" role="Louise’s brother: Iain McCallum (Groomsman) Louise’s sister-in-law: Christina McCallum (Bridesmaid)" fileName="beach.jpg" />
               <Person name="" role="Jake’s sister: Hannah Shackleford (Maid of Honour), Hannah’s boyfriend: Andy Foulkes" fileName="ha.jpg" />
 
+              <Person name="" role="Ell Heward (Best man)" fileName="ell.jpg" />
               <Person name="" role="Lloyd Stephenson (Best man)" fileName="bb.jpg" />
               <Person name="" role="Graham Kimber (Groomsman), Ell Heward (Best man), and Will Lloyd (Groomsman)" fileName="Jake-and-pals-3.jpg" />
               <Person name="" role="Bridesmaids: Hayley Martin, Amelia Mackin" fileName="Louise-Hayley-Amelia.jpg" />

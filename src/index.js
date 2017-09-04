@@ -23,6 +23,7 @@ import Music from './Scenes/Music.jsx';
 import RSVP from './Scenes/RSVP.jsx';
 import Transport from './Scenes/Transport.jsx';
 import WeddingParty from './Scenes/WeddingParty.jsx';
+import Ceilidh from './Scenes/Ceilidh.jsx';
 
 const history = createHashHistory();
 
@@ -115,6 +116,8 @@ class App extends React.Component {
                 <Route path="/rsvp" exact render={() => <RSVP />} />
                 <Route path="/travel" exact render={() => <Transport />} />
                 <Route path="/wedding-party" exact render={() => <WeddingParty />} />
+                <Route path="/ceilidh" exact render={() => <Ceilidh />} />
+                
               </div>
             </EnsureAuth.Body>
           </div>

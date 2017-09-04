@@ -92,7 +92,7 @@ class DundasCastle extends Component {
               </HRow>
               <HRow>
                 <HDate>1818</HDate>
-                <HDescription>Henry Dundas built the ‘modern’ castle in, replacing an earlier 17th Century building. William Burn, one of Scotland’s greatest architects, designed the magnificent house.</HDescription>
+                <HDescription>Henry Dundas built the ‘modern’ castle, replacing an earlier 17th Century building. William Burn, one of Scotland’s greatest architects, designed the magnificent house.</HDescription>
               </HRow>
               <HRow>
                 <HDate>1846</HDate>

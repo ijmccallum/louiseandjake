@@ -26,16 +26,18 @@ class Ceilidh extends Component {
   render() {
     return (
       <div>
-        <Image fileName="accom.jpg" />
+        <Image fileName="ceilidh-text.jpg" />
 
         <HeroPic fileName={"ceilidh.jpg"}/>
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <p>Don’t worry if you do not know the steps, <a href="http://www.baltikceilidhband.com" target="_blank">The Baltik Ceilidh Band</a> will be keeping us right on the night. If you do fancy giving it a go before though, here are some links and popular dances!</p>
-            https://ceilidhclub.com/events/
-            London Ceilidh Club events - tickets £16.50
-            http://ceilidhexperience.visitscotland.com/#choose-dance
+            <p>Don’t worry if you do not know the steps, <a href="http://www.baltikceilidhband.com" target="_blank" style={{display:'inline-block'}}>The Baltik Ceilidh Band</a> will be keeping us right on the night. If you do fancy giving it a go before though, here are some links and popular dances!</p>
+            <br />
+            <a href="https://ceilidhclub.com/events/" style={{display:'inline-block'}}>London Ceilidh Club events</a> - tickets £16.50
+            <a href="http://ceilidhexperience.visitscotland.com/#choose-dance">ceilidhexperience.visitscotland.com/#choose-dance</a>
+            <br />
+            Be sure to bring suitable footwear for flinging yourself around the room!
           </Section>
 
           <Section>

@@ -5,6 +5,7 @@ import PageTitle from '../Components/PageTitle.jsx';
 import SubTitle from '../Components/SubTitle.jsx';
 import Section from '../Components/Section.jsx';
 import Image from '../Components/Image.jsx';
+import Icons from '../Components/Icons';
 import styled from 'styled-components';
 import Fonts from '../Services/fonts';
 import Colors from '../Services/colors';
@@ -56,6 +57,14 @@ const Name = styled.div`
   }
 `;
 
+const RsvpButtonWrap = styled.div`
+  transform:scale(1);
+  transition: transform 0.2s ease;
+  &:hover {
+    transform:scale(1.02);
+  }
+`;
+
 class Home extends Component {
   render() {
     return (
@@ -102,9 +111,20 @@ class Home extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <Link to="rsvp">
-              <Image fileName='rsvp.jpg' />
-            </Link>
+            <RsvpButtonWrap>
+              <Link to="rsvp">
+                <Image fileName='rsvp.jpg' />
+              </Link>
+            </RsvpButtonWrap>
+          </Section>
+          <Section>
+            <p><Icons.Email /></p>
+            <p>dundaswedding2018@gmail.com</p>
+          </Section>
+          <Section>
+            <p><Icons.Phone /></p>
+            <p>Jake: 07787158280</p>
+            <p>Louise: 07751137423</p>
           </Section>
         </Layouts.ContentWidthWrapper>
 

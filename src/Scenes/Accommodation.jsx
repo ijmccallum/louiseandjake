@@ -313,7 +313,7 @@ class Accommodation extends Component {
                   <div>
                     <p>1 George IV Bridge</p>
                     <p>Edinburgh</p>
-                    <p>Tel: 0131 2206666</p>
+                    <p>Tel: 0131 220 6666</p>
                   </div>
                 }
                 url="http://www.gandvhotel.com"

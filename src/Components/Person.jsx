@@ -23,6 +23,7 @@ const PicRatio = styled.div`
   margin: 0 0 20px;
   border: 8px solid rgb(255, 255, 255);
   box-shadow: rgba(0, 0, 0, 0.25) 0px 1px 4px;
+  perspective: 1000px;
 `;
 
 const Pic = styled.img`

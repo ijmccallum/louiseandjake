@@ -46,13 +46,13 @@ class WeddingParty extends Component {
                 Christina McCallum <br />
                 (Bridesmaid)
               </Person>
-              <Person fileName="ha.jpg">
+              {/* <Person fileName="ha.jpg">
                 Jake’s sister: <br />
                 Hannah Shackleford <br />
                 (Maid of Honour), <br />
                 Hannah’s boyfriend: <br />
                 Andy Foulkes
-              </Person>
+              </Person> */}
               <Person fileName="hannah.jpg">
                 Jake’s sister: <br />
                 Hannah Shackleford <br />

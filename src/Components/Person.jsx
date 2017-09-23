@@ -8,8 +8,8 @@ import Fonts from '../Services/fonts';
 
 const Wrap = styled.div`
   flex: 1;
-  max-width: 260px;
-  min-width: 230px;
+  max-width: 360px;
+  min-width: 300px;
   margin: 20px;
 `;
 
@@ -33,15 +33,6 @@ const Pic = styled.img`
   max-width: calc(100% + 16px);
 `;
 
-const Name = styled.div`
-  margin: 0;
-  text-align: center;
-  line-height: 1.1;
-  font-family: ${Fonts.serif};
-  position: relative;
-  color: ${Colors.subTitle};
-  font-size: 35px;
-`;
 
 const Role = styled.div`
   margin: 0 0 20px;
@@ -69,13 +60,9 @@ export default function Person(props){
         }
       </PicRatio>
 
-      {props.name && <Name>{props.name},</Name>}
-      
-      {props.role && <Role>{props.role}</Role>}
-      
-      <Description>
+      <Role>
         {props.children}
-      </Description>
+      </Role>
     </Wrap>
   );
 }

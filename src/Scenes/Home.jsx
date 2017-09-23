@@ -126,6 +126,9 @@ class Home extends Component {
             <p>Jake: 07787158280</p>
             <p>Louise: 07751137423</p>
           </Section>
+          <Section>
+            <p>Please let us know of any dietary requirements and/or allergies.</p>
+          </Section>
         </Layouts.ContentWidthWrapper>
 
           {/* <p>RSVP: dundaswedding2018@gmail.com</p> */}

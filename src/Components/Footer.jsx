@@ -26,7 +26,7 @@ function Footer(props){
       <Border.Foil />
       <Countdown />
       <Credit>
-        Site by Iain & Christina
+        Site by Iain & Christina McCallum
       </Credit>
     </FooterWrap>
   );

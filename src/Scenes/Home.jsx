@@ -115,7 +115,7 @@ class Home extends Component {
           <Section>
             <p>Please join us to celebrate the marriage of <br />
             Louise Kirsteen McCallum and Jake Edward Michael Shackleford<br />
-            at Dundas Castle, Edinburgh on Saturday the first of September 2018.</p>
+            at Dundas Castle, Edinburgh on Saturday 1st September 2018.</p>
           </Section>
           <Section>
             <p><Icons.Email /></p>

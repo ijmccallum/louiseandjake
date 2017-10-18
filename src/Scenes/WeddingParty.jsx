@@ -24,17 +24,67 @@ class WeddingParty extends Component {
         <Layouts.BigContentWidthWrapper>
           <Section>
             <Party>
-              <Person name="" role="Father of the Bride: Peter McCallum" fileName="plj.jpg" />
-              <Person name="" role="Mother of the Groom: Kate Shackleford, Father of the Groom: Ian Shackleford" fileName="jlki.jpg" />
-              <Person name="" role="Late Mother of the Bride: Alexandra McCallum who we will miss forever but we have many happy memories of her to cherish." fileName="mum.jpg" />
-              <Person name="" role="Louise’s brother: Iain McCallum (Groomsman) Louise’s sister-in-law: Christina McCallum (Bridesmaid)" fileName="beach.jpg" />
-              <Person name="" role="Jake’s sister: Hannah Shackleford (Maid of Honour), Hannah’s boyfriend: Andy Foulkes" fileName="ha.jpg" />
+              <Person fileName="plj.jpg">
+                Father of the Bride: <br />
+                Peter McCallum
+              </Person>
+              <Person fileName="mum.jpg">
+                Late Mother of the Bride:<br />
+                Alexandra McCallum who we will miss forever but we have many happy memories of her to cherish.
+              </Person>
+              <Person fileName="jlki.jpg">
+                Mother of the Groom: <br />
+                Kate Shackleford, <br />
+                Father of the Groom: <br />
+                Ian Shackleford
+              </Person>
+              <Person fileName="beach.jpg">
+                Louise’s brother: <br />
+                Iain McCallum <br />
+                (Groomsman) <br />
+                Louise’s sister-in-law: <br />
+                Christina McCallum <br />
+                (Bridesmaid)
+              </Person>
+              {/* <Person fileName="ha.jpg">
+                Jake’s sister: <br />
+                Hannah Shackleford <br />
+                (Maid of Honour), <br />
+                Hannah’s boyfriend: <br />
+                Andy Foulkes
+              </Person> */}
+              <Person fileName="hannah.jpg">
+                Jake’s sister: <br />
+                Hannah Shackleford <br />
+                (Maid of Honour)
+              </Person>
 
-              <Person name="" role="Ell Heward (Best man)" fileName="ell.jpg" />
-              <Person name="" role="Lloyd Stephenson (Best man)" fileName="bb.jpg" />
-              <Person name="" role="Graham Kimber (Groomsman), Ell Heward (Best man), and Will Lloyd (Groomsman)" fileName="Jake-and-pals-3.jpg" />
-              <Person name="" role="Bridesmaids: Hayley Martin, Amelia Mackin" fileName="Louise-Hayley-Amelia.jpg" />
-              <Person name="" role="Louise’s cousin: Pamela McCallum (Bridesmaid)" fileName="p.jpg" />
+              <Person fileName="ell.jpg">
+                Ell Heward <br />
+                (Best man)
+              </Person>
+              <Person fileName="bb.jpg">
+                Lloyd Stephenson <br />
+                (Best man)
+              </Person>
+              <Person fileName="Jake-and-pals-3.jpg">
+                Graham Kimber <br />
+                (Groomsman), <br />
+                Ell Heward <br />
+                (Best man), <br />
+                and Will Lloyd <br />
+                (Groomsman)
+              </Person>
+              <Person fileName="Louise-Hayley-Amelia.jpg">
+                Hayley Martin, <br />
+                Amelia Mackin<br />
+                (Bridesmaids) 
+              </Person>
+              <Person fileName="p.jpg">
+                Louise’s cousin: <br />
+                Pamela McCallum <br />
+                (Bridesmaid)
+              </Person>
             </Party>
           </Section>
         </Layouts.BigContentWidthWrapper>

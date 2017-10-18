@@ -54,7 +54,7 @@ function Footer(props){
 
       <LeftRight>
         <Credit>
-          Site by Iain & Christina
+          Site by Iain & Christina McCallum
         </Credit>
 
         <FooterUtilNav>

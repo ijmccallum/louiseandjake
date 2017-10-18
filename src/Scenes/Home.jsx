@@ -90,7 +90,6 @@ class Home extends Component {
               <span style={{position: "relative", top: "-20px"}}>1st September 2018</span><br />
               Please join us to celebrate the marriage of
             </SavyDaty>
-
             <Names>
               <Name>
                 Louise Kirsteen McCallum
@@ -107,17 +106,15 @@ class Home extends Component {
               at Dundas Castle, Edinburgh
             </SavyDaty>
           </Section>
-        </Layouts.ContentWidthWrapper>
+        </Layouts.ContentWidthWrapper> */}
         
         {/* <Border.Line /> */}
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <RsvpButtonWrap>
-              <Link to="rsvp">
-                <Image fileName='rsvp.jpg' />
-              </Link>
-            </RsvpButtonWrap>
+            <p>Please join us to celebrate the marriage of <br />
+            Louise Kirsteen McCallum and Jake Edward Michael Shackleford<br />
+            at Dundas Castle, Edinburgh on Saturday 1st September 2018.</p>
           </Section>
           <Section>
             <p><Icons.Email /></p>
@@ -127,6 +124,16 @@ class Home extends Component {
             <p><Icons.Phone /></p>
             <p>Jake: 07787158280</p>
             <p>Louise: 07751137423</p>
+          </Section>
+          <Section>
+            <p>Please let us know of any dietary requirements and/or allergies.</p>
+          </Section>
+          <Section>
+            <RsvpButtonWrap>
+              <Link to="rsvp">
+                <Image fileName='rsvp.jpg' />
+              </Link>
+            </RsvpButtonWrap>
           </Section>
         </Layouts.ContentWidthWrapper>
 

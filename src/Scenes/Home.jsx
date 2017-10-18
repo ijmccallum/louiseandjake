@@ -83,35 +83,6 @@ class Home extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            {/* <Image fileName="save-the-date.jpg"/> */}
-
-            <SavyDaty>
-            <span style={{position: "relative", top: "-20px"}}>Saturday</span><br />
-              <span style={{position: "relative", top: "-20px"}}>1st September 2018</span><br />
-              Please join us to celebrate the marriage of
-            </SavyDaty>
-            <Names>
-              <Name>
-                Louise Kirsteen McCallum
-              </Name>
-              <div style={{'min-width': '42px'}}>
-              <Image fileName='ampersand.jpg'/>
-              </div>
-              <Name>
-                Jake Edward<br />Michael Shackleford
-              </Name>
-            </Names>
-
-            <SavyDaty>
-              at Dundas Castle, Edinburgh
-            </SavyDaty>
-          </Section>
-        </Layouts.ContentWidthWrapper> */}
-        
-        {/* <Border.Line /> */}
-
-        <Layouts.ContentWidthWrapper>
-          <Section>
             <p>Please join us to celebrate the marriage of <br />
             Louise Kirsteen McCallum and Jake Edward Michael Shackleford<br />
             at Dundas Castle, Edinburgh on Saturday 1st September 2018.</p>

@@ -123,11 +123,13 @@ class App extends React.Component {
           </div>
         </Router>
     
-        <EnsureAuth.Footer isLoggedIn={this.state.isLoggedIn}>
-          <AppFooter>
-            <Footer />
-          </AppFooter>
-        </EnsureAuth.Footer>
+        <Router history={history}>
+          <EnsureAuth.Footer isLoggedIn={this.state.isLoggedIn}>
+            <AppFooter>
+              <Footer />
+            </AppFooter>
+          </EnsureAuth.Footer>
+        </Router>
     
         <MusicPlayer />
 

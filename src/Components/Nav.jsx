@@ -96,10 +96,10 @@ class Nav extends Component{
             </Close>
           </div>
           <NavLink url="/" text="Louise & Jake" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/rsvp" text="RSVP" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          {/* <NavLink url="/rsvp" text="RSVP" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} /> */}
           <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/travel" text="Travel" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          {/* <NavLink url="/travel" text="Travel" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} /> */}
           <NavLink url="/accommodation" text="Accommodation" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/gifts" text="Gifts" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/ceilidh" text="Ceilidh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />

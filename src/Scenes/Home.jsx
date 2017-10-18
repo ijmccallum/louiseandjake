@@ -17,6 +17,7 @@ const SavyDaty = styled.div`
   color: ${Colors.homeCopy};
   line-height:1;
   font-size: 18px;
+  padding-top: 40px;
   @media (min-width: 500px) {
     font-size: 20px;
   }
@@ -82,9 +83,10 @@ class Home extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <Image fileName="save-the-date.jpg"/>
+            {/* <Image fileName="save-the-date.jpg"/> */}
 
             <SavyDaty>
+            <span style={{position: "relative", top: "-20px"}}>Saturday</span><br />
               <span style={{position: "relative", top: "-20px"}}>1st September 2018</span><br />
               Please join us to celebrate the marriage of
             </SavyDaty>

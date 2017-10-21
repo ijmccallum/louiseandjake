@@ -9,7 +9,7 @@ import Icons from '../Components/Icons';
 
 
 
-class RSVP extends Component {
+class BBQ extends Component {
   
   render() {
     const List = styled.ul`
@@ -47,47 +47,25 @@ class RSVP extends Component {
       <div>
         {/* <PageTitle>RSVP</PageTitle> */}
 
-        <Image fileName={"rsvpgold.jpg"}/>
 
         <Layouts.ContentWidthWrapper>
-          <Section>
-            <p>
-              A little reminder so you don’t forget, <br />
-              A night of celebration you won’t regret, <br />
-              A quick email or text, you know what to do, <br />
-              Will help us figure out which table's for you!
-            </p>
-          </Section>
           <div style={{position: "relative", right: "21px", "margin-bottom": "-20px"}}>
             <Image fileName={"divide-left.jpg"}/>
           </div>
           <Section>
-            <p><Icons.Email /></p>
-            <p>dundaswedding2018@gmail.com</p>
-          </Section>
-          <Section>
-            <p><Icons.Phone /></p>
-            <p>Jake: 07787158280</p>
-            <p>Louise: 07751137423</p>
+            <p>Please join us for an</p>
+            <h1>"I DO" BBQ</h1>
+            <Image fileName={"rsvpgold.jpg"}/>
+            <p>We will be hosting a BBQ on Sunday 2nd September 2018, from 12 noon onwards at Louise’s house in Stirling (11 Manse Crescent, FK7 9AJ).</p>
+            <p>We would love it if you could join us!</p>
           </Section>
           <div style={{position: "relative", left: "21px", "margin-bottom": "-40px"}}>
             <Image fileName={"divide-right.jpg"}/>
           </div>
-          <Section>
-            <p style={{"margin-bottom": "70px"}}>
-              Please let us know:
-              <List>
-                <li><BulLeft /><span>If you can attend our wedding as soon as you can.</span><BulRight /></li>
-                <li><BulLeft /><span>Also if you know you cannot.</span><BulRight /></li>
-                <li><BulLeft /><span>Any dietary requirements and/or allergies.</span><BulRight /></li>
-                <li><BulLeft /><span>Any song requests or your favourite ceilidh dances!</span><BulRight /></li>
-              </List>
-            </p>
-          </Section>
         </Layouts.ContentWidthWrapper>
       </div>
     );
   }
 }
 
-export default RSVP;
+export default BBQ;

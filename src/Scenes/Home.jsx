@@ -127,7 +127,12 @@ class Home extends Component {
             <p>Louise: 07751137423</p>
           </Section>
           <Section>
-            <p>Please let us know of any dietary requirements and/or allergies.</p>
+            <p>Please let us know:</p>
+            <p>Any dietary requirements and/or allergies you may have.</p>
+            <p>Which song will get you on the dance floor!</p>
+          </Section>
+          <Section>
+            <p><strong>Dress code:</strong> morning dress, highland dress, or lounge suits.</p>
           </Section>
           <Section>
             <RsvpButtonWrap>

@@ -99,17 +99,19 @@ class Nav extends Component{
           <NavLink url="/bbq" text="BBQ" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/dundas-castle" text="Dundas Castle" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/wedding-party" text="Wedding Party" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
-          <NavLink url="/travel" text="Travel" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          {/* <NavLink url="/travel" text="Travel" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} /> */}
           <NavLink url="/accommodation" text="Accommodation" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/gifts" text="Gifts" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/ceilidh" text="Ceilidh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          <NavLink url="/photos" text="Photos" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
+          
 
           {/* 
           <NavLink url="/edinburgh" text="Edinburgh" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} />
           <NavLink url="/music" text="Playlist Requests" routeProps={this.props.routeProps} handleClick={this.handleLinkClick} /> */}
-          <div>
+          {/* <div>
             <LogOutBtn handleLogout={this.props.handleLogout}>Logout</LogOutBtn>
-          </div>
+          </div> */}
         </NavWrap>
 );
     }

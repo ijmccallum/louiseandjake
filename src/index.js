@@ -24,6 +24,7 @@ import BBQ from './Scenes/BBQ.jsx';
 import Transport from './Scenes/Transport.jsx';
 import WeddingParty from './Scenes/WeddingParty.jsx';
 import Ceilidh from './Scenes/Ceilidh.jsx';
+import WedPics from './Scenes/WedPics.jsx';
 
 const history = createHashHistory();
 
@@ -117,17 +118,20 @@ class App extends React.Component {
                 <Route path="/travel" exact render={() => <Transport />} />
                 <Route path="/wedding-party" exact render={() => <WeddingParty />} />
                 <Route path="/ceilidh" exact render={() => <Ceilidh />} />
+                <Route path="/photos" exact render={() => <WedPics />} />
                 
               </div>
             </EnsureAuth.Body>
           </div>
         </Router>
     
-        <EnsureAuth.Footer isLoggedIn={this.state.isLoggedIn}>
-          <AppFooter>
-            <Footer />
-          </AppFooter>
-        </EnsureAuth.Footer>
+        <Router history={history}>
+          <EnsureAuth.Footer isLoggedIn={this.state.isLoggedIn}>
+            <AppFooter>
+              <Footer handleLogout={this.handleLogout}/>
+            </AppFooter>
+          </EnsureAuth.Footer>
+        </Router>
     
         <MusicPlayer />
 

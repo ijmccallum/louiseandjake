@@ -54,9 +54,9 @@ class BBQ extends Component {
           </div>
           <Section>
             <p>Please join us for an</p>
-            <h1>"I DO" BBQ</h1>
-            <Image fileName={"rsvpgold.jpg"}/>
-            <p>We will be hosting a BBQ on Sunday 2nd September 2018, from 12 noon onwards at Louise’s house in Stirling (11 Manse Crescent, FK7 9AJ).</p>
+            <Image fileName={"idobbq.jpg"}/>
+            <p>We will be hosting a BBQ on Sunday 2nd September 2018, <br/>from 12 noon onwards at Louise’s house in Stirling.</p>
+            <p>(11 Manse Crescent, FK7 9AJ)</p>
             <p>We would love it if you could join us!</p>
           </Section>
           <div style={{position: "relative", left: "21px", "margin-bottom": "-40px"}}>

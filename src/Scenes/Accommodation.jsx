@@ -48,6 +48,26 @@ class Accommodation extends Component {
           <GridWrap>
             <GridCell>
               <Bed
+                title="Glampotel Dundas Castle"
+                description={
+                  <div>
+                    <p>Approx. 1 mile from The Pavilion where our wedding reception will be held. Check-in from 3pm on day of arrival, and no later than 9pm. 15-minute drive from Edinburgh Airport. Starts at £189 per night for two in a five star canvas cottage including: equipped kitchenette, shower room with toiletries and flushable toilets, barbecue, wood burning stove, towels, cool box, lighting, patio heater, comfy seating and a lockable safe box. Luxury breakfast hampers can be delivered. Latest discounts are on the website.</p>
+                  </div>
+                }
+                address={
+                  <div>
+                    <p>Dundas Castle</p>
+                    <p>South Queensferry </p>
+                    <p>Edinburgh </p>
+                    <p>Tel: 0800 998 9129</p>
+                  </div>
+                }
+                url="http://www.glampoteldundascastle.com/"
+              />
+            </GridCell>
+
+            <GridCell>
+              <Bed
                 title="Dakota"
                 description={
                   <div>

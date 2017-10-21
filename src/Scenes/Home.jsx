@@ -17,6 +17,7 @@ const SavyDaty = styled.div`
   color: ${Colors.homeCopy};
   line-height:1;
   font-size: 18px;
+  padding-top: 40px;
   @media (min-width: 500px) {
     font-size: 20px;
   }
@@ -82,40 +83,14 @@ class Home extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <Image fileName="wreath.jpg"/>
-          </Section>
-        </Layouts.ContentWidthWrapper>
-        {/* <Layouts.ContentWidthWrapper>
-          <Section>
-            <SavyDaty>
-              <span style={{position: "relative", top: "-20px"}}>1st September 2018</span><br />
-              Please join us to celebrate the marriage of
-            </SavyDaty>
-            <Names>
-              <Name>
-                Louise Kirsteen McCallum
-              </Name>
-              <div style={{'min-width': '42px'}}>
-              <Image fileName='ampersand.jpg'/>
-              </div>
-              <Name>
-                Jake Edward<br />Michael Shackleford
-              </Name>
-            </Names>
-
-            <SavyDaty>
-              at Dundas Castle, Edinburgh
-            </SavyDaty>
-          </Section>
-        </Layouts.ContentWidthWrapper> */}
-        
-        {/* <Border.Line /> */}
-
-        <Layouts.ContentWidthWrapper>
-          <Section>
             <p>Please join us to celebrate the marriage of <br />
             Louise Kirsteen McCallum and Jake Edward Michael Shackleford<br />
             at Dundas Castle, Edinburgh on Saturday 1st September 2018.</p>
+          </Section>
+          <Section>
+            <RsvpButtonWrap>
+               <Image fileName='rsvp.jpg' />
+            </RsvpButtonWrap>
           </Section>
           <Section>
             <p><Icons.Email /></p>
@@ -132,15 +107,9 @@ class Home extends Component {
             <p>Which song will get you on the dance floor!</p>
           </Section>
           <Section>
-            <p><strong>Dress code:</strong> morning dress, highland dress, or lounge suits.</p>
+            <p style={{'padding-bottom':'60px'}}><strong>Dress code:</strong> morning dress, highland dress, or lounge suits. 🎩</p>
           </Section>
-          <Section>
-            <RsvpButtonWrap>
-              <Link to="rsvp">
-                <Image fileName='rsvp.jpg' />
-              </Link>
-            </RsvpButtonWrap>
-          </Section>
+          
         </Layouts.ContentWidthWrapper>
 
           {/* <p>RSVP: dundaswedding2018@gmail.com</p> */}

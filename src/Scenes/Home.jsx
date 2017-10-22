@@ -84,8 +84,11 @@ class Home extends Component {
         <Layouts.ContentWidthWrapper>
           <Section>
             <p>Please join us to celebrate the marriage of <br />
-            Louise Kirsteen McCallum and Jake Edward Michael Shackleford<br />
-            at Dundas Castle, Edinburgh on Saturday 1st September 2018.</p>
+            Louise Kirsteen McCallum<br /> 
+            and<br /> 
+            Jake Edward Michael Shackleford<br />
+            at Dundas Castle, Edinburgh<br />
+            Saturday 1st September 2018.</p>
           </Section>
           <Section>
             <RsvpButtonWrap>
@@ -107,7 +110,7 @@ class Home extends Component {
             <p>Which song will get you on the dance floor!</p>
           </Section>
           <Section>
-            <p style={{'padding-bottom':'60px'}}><strong>Dress code:</strong> morning dress, highland dress, or lounge suits. 🎩</p>
+            <p style={{'padding-bottom':'60px'}}><strong>Dress code:</strong> morning dress, highland dress, or lounge suits.</p>
           </Section>
           
         </Layouts.ContentWidthWrapper>

@@ -77,7 +77,7 @@ function Footer(props){
           {/* <li><Link to="/rsvp">RSVP</Link></li> */}
           <li><Link to="/travel">Travel</Link></li>
           <li>
-            <LogOutButton handleLogout={props.handleLogout}>Logout</LogOutButton>
+            <LogOutButton onClick={props.handleLogout}>Logout</LogOutButton>
           </li>
         </FooterUtilNav>
       </LeftRight>

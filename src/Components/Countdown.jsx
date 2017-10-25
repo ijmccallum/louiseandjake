@@ -8,7 +8,7 @@ import moment from 'moment';
 export default function Countdown(props){
 
   //months are 0 based
-  const startDay = 12;
+  const startDay = 11;
   const startMonth = 6;
   const startYear = 2017;
   const endDay = 1;

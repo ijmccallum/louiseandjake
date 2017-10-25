@@ -23,7 +23,13 @@ class WedPics extends Component {
 
         <Image fileName={"wedpics.png"}/>
         <Layouts.ContentWidthWrapper>
-        <p>Please download the <a href="https://gm2dkmryha2q.wedpics.com/album" style={{display: 'inline'}}>wedpics app</a> so you can upload and see all the pics from our day!</p>
+          <Section>
+            <p>Please download the wedpics app (<a href="https://itunes.apple.com/us/app/wedpics-wedding-photo-app/id549402355" style={{display: 'inline'}}>Apple</a>, <a href="https://play.google.com/store/apps/details?id=com.dejami.WedPics&hl=en" style={{display: 'inline'}}>Android</a>) or <a href="https://wedpics.com/home" style={{display: 'inline'}}>Sign up online</a> so you can upload and see all the pics from our day!</p>
+            <p>Use wedding ID: <strong>louiseandjake</strong></p>
+          </Section>
+          <Section>
+            <Image fileName='wedpics.jpg' />
+          </Section>
         </Layouts.ContentWidthWrapper>
         <CutOff>
         <iframe src="https://gm2dkmryha2q.wedpics.com/album" frameborder="0" style={{width:'100%',border:'none', height:'100vh', display: 'block'}}></iframe>

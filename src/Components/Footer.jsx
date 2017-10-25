@@ -44,6 +44,22 @@ const FooterUtilNav = styled.ul`
     }
   }
 `;
+const LogOutButton = styled.button`
+  fill: ${Colors.footer.text};
+  font-family: ${Fonts.serif};
+  font-size: 14px;
+  color: ${Colors.footer.text};
+  z-index: 10;
+  background: transparent;
+  border: none;
+  padding: 5px 10px 11px;
+  cursor: pointer;
+  vertical-align: middle;
+  text-decoration: underline;
+  svg {
+    width: 10px; height: 10px;
+  }
+`;
 
 function Footer(props){
   return (
@@ -58,11 +74,13 @@ function Footer(props){
         </Credit>
 
         <FooterUtilNav>
-          <li><Link to="/rsvp">RSVP</Link></li>
+          {/* <li><Link to="/rsvp">RSVP</Link></li> */}
           <li><Link to="/travel">Travel</Link></li>
+          <li>
+            <LogOutButton onClick={props.handleLogout}>Logout</LogOutButton>
+          </li>
         </FooterUtilNav>
-      </
-      LeftRight>
+      </LeftRight>
 
     </FooterWrap>
   );

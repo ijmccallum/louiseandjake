@@ -55,6 +55,10 @@ class Transport extends Component {
               And on the day…
             </SubTitle>
             <div style={{"text-align": "left"}}>
+              <CapsTitle>TAXI</CapsTitle>
+              <p style={{'text-align':'center'}}>Jimmy’s Private Hire<br /><a href="tel:07866-570-212">07866 570 212</a></p>
+              <p>4, 6 &amp; 8 seaters available.  Serving South Queensferry, Kirkliston, Dalmeny, Newton & surrounding areas.</p>
+              <br />
               <CapsTitle>FROM EDINBURGH CITY CENTRE</CapsTitle>
               <p>If travelling from the centre of Edinburgh, the best route to take is along Queensferry Road and on the A90, towards the Forth Road Bridge. At Echline Junction (the last slip road before the Bridge) take the road up to the roundabout. Turn right at the third exit on to the B800. Head straight over the next roundabout. The entrance to the Castle is on the right 300 metres after leaving the roundabout (and past the flyover) there are signs by the Main gate.</p>
               <br />

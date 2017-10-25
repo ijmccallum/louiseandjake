@@ -20,7 +20,7 @@ import Accommodation from './Scenes/Accommodation.jsx';
 import Edinburgh from './Scenes/Edinburgh.jsx';
 import Gifts from './Scenes/Gifts.jsx';
 import Music from './Scenes/Music.jsx';
-import RSVP from './Scenes/RSVP.jsx';
+import BBQ from './Scenes/BBQ.jsx';
 import Transport from './Scenes/Transport.jsx';
 import WeddingParty from './Scenes/WeddingParty.jsx';
 import Ceilidh from './Scenes/Ceilidh.jsx';
@@ -114,7 +114,7 @@ class App extends React.Component {
                 <Route path="/edinburgh" exact render={() => <Edinburgh />} />
                 <Route path="/gifts" exact render={() => <Gifts />} />
                 <Route path="/music" exact render={() => <Music />} />
-                <Route path="/rsvp" exact render={() => <RSVP />} />
+                <Route path="/bbq" exact render={() => <BBQ />} />
                 <Route path="/travel" exact render={() => <Transport />} />
                 <Route path="/wedding-party" exact render={() => <WeddingParty />} />
                 <Route path="/ceilidh" exact render={() => <Ceilidh />} />
@@ -128,7 +128,7 @@ class App extends React.Component {
         <Router history={history}>
           <EnsureAuth.Footer isLoggedIn={this.state.isLoggedIn}>
             <AppFooter>
-              <Footer />
+              <Footer handleLogout={this.handleLogout}/>
             </AppFooter>
           </EnsureAuth.Footer>
         </Router>

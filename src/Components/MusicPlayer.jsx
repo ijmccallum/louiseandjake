@@ -28,7 +28,7 @@ export default function MusicPlayer(props){
 
   return (
     <BackgroundMusic>
-      {/* <iframe width="100" height="10" src={`https://www.youtube.com/embed/${randomId()}?autoplay=1`} frameborder="0" allowfullscreen></iframe> */}
+      <iframe width="100" height="10" src={`https://www.youtube.com/embed/${randomId()}?autoplay=1`} frameborder="0" allowfullscreen></iframe>
     </BackgroundMusic>
   );
 }

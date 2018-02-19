@@ -105,6 +105,12 @@ class Home extends Component {
             <p>Louise: 07751137423</p>
           </Section>
           <Section>
+            <p>42a Cabul Road</p>
+            <p>Battersea</p>
+            <p>London</p>
+            <p>SW11 2PN</p>
+          </Section>
+          <Section>
             <p>Please let us know:</p>
             <p>Any dietary requirements and/or allergies you may have.</p>
             <p>Which song will get you on the dance floor!</p>

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Layouts from '../Components/Layouts';
 import styled from 'styled-components';
 import HeroPic from '../Components/HeroPic.jsx';
@@ -70,6 +71,8 @@ class DundasCastle extends Component {
             <p>Dundas Castle is situated 8 miles from Edinburgh, approximately half an hour by car west of the city centre.</p>
             <p>Guests should enter by the main gates of the estate leading from the B800 which runs between South Queensferry and Kirkliston.</p>
             <p>Please be advised that the Dundas Castle postcode is not recognised on any GPS navigation systems but by entering EH30 9SS you will be directed to the B800 where you will see the sign for the front entrance to Dundas Castle</p>
+            <p>There is plenty car parking space at the Castle.</p>
+            <p>For further directions and taxi information <Link to="/travel" style={{display:"inline"}}>click here</Link>.</p>
           </Section>
 
         </Layouts.ContentWidthWrapper>

@@ -50,7 +50,7 @@ class Gifts extends Component {
               Would really make our day!<br />
               <br />
             </Poem>
-            {/* <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p> */}
+            <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p>
           </Section>
           <br />
           <HeroPic fileName={"holiday.jpg"}/>

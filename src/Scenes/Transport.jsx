@@ -21,7 +21,13 @@ const CapsTitle = styled.div`
 `
 
 class Transport extends Component {
+  componentDidUpdate() {
+    window.scrollTo(0, 0);
+  }
   render() {
+    setTimeout(function(){ 
+      window.scrollTo(0, 0);
+    }, 0);
     return (
       <div>
         {/* <PageTitle>Travel & Directions</PageTitle> */}

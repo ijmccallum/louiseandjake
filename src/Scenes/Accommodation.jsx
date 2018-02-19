@@ -71,7 +71,7 @@ class Accommodation extends Component {
                 title="Dakota"
                 description={
                   <div>
-                    <p>Dakota is the closest Hotel to Dundas Castle. Being a few minutes drive, it has 103 bedrooms and 2 suites and is a five minute drive from Dundas Castle. It has a bar & grill and residents gym. The bedrooms have excellent amenities including a plasma screen with 65 channels, fresh cookies on arrival and toiletries from the South of France.</p>
+                    <p>Dakota is the closest Hotel to Dundas Castle. There is a complimentary week day shuttle from the airport to the Dakota hotel. Being a few minutes drive, it has 103 bedrooms and 2 suites and is a five minute drive from Dundas Castle. It has a bar & grill and residents gym. The bedrooms have excellent amenities including a plasma screen with 65 channels, fresh cookies on arrival and toiletries from the South of France.</p>
                     <p>Prices range from £100.00 and include Breakfast Subject to availability</p>
                   </div>
                 }

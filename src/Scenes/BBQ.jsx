@@ -7,7 +7,12 @@ import Section from '../Components/Section.jsx';
 import styled from 'styled-components';
 import Icons from '../Components/Icons';
 
-
+const Map = styled.div`
+  iframe {
+    margin: 0;
+    display: block;
+  }
+`;
 
 class BBQ extends Component {
   
@@ -63,6 +68,9 @@ class BBQ extends Component {
             <Image fileName={"divide-right.jpg"}/>
           </div>
         </Layouts.ContentWidthWrapper>
+        <Map>
+          <iframe src="https://snazzymaps.com/embed/10331" width="100%" height="300px" style={{border:0}}></iframe>
+        </Map>
       </div>
     );
   }

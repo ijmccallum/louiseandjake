@@ -12,6 +12,13 @@ import Colors from '../Services/colors';
 import Layouts from '../Components/Layouts';
 import Border from '../Components/Border.jsx';
 
+const Map = styled.div`
+  iframe {
+    margin: 0;
+    display: block;
+  }
+`;
+
 const SavyDaty = styled.div`
   font-family: ${Fonts.serif};
   color: ${Colors.homeCopy};
@@ -120,6 +127,9 @@ class Home extends Component {
           </Section>
           
         </Layouts.ContentWidthWrapper>
+        <Map>
+          <iframe src="https://snazzymaps.com/embed/10331" width="100%" height="300px" style={{border:0}}></iframe>
+        </Map>
 
           {/* <p>RSVP: dundaswedding2018@gmail.com</p> */}
 

@@ -9,6 +9,12 @@ import Colors from '../Services/colors';
 import Bed from '../Components/Bed';
 import Border from '../Components/Border.jsx';
 import Image from '../Components/Image.jsx';
+const Map = styled.div`
+  iframe {
+    margin: 0;
+    display: block;
+  }
+`;
 const GridWrap =styled.div`
   display: flex;
   flex-direction: row;
@@ -355,6 +361,9 @@ class Accommodation extends Component {
             </div>
           </Section>
         </Layouts.ContentWidthWrapper>
+        <Map>
+          <iframe src="https://snazzymaps.com/embed/10331" width="100%" height="300px" style={{border:0}}></iframe>
+        </Map>
       </div>
     );
   }

@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-import HeroPic from '../Components/HeroPic.jsx';
-import PageTitle from '../Components/PageTitle.jsx';
-import SubTitle from '../Components/SubTitle.jsx';
-import Section from '../Components/Section.jsx';
-import Image from '../Components/Image.jsx';
-import Icons from '../Components/Icons';
-import styled from 'styled-components';
-import Fonts from '../Services/fonts';
-import Colors from '../Services/colors';
-import Layouts from '../Components/Layouts';
-import Border from '../Components/Border.jsx';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import HeroPic from "../Components/HeroPic.jsx";
+import PageTitle from "../Components/PageTitle.jsx";
+import SubTitle from "../Components/SubTitle.jsx";
+import Section from "../Components/Section.jsx";
+import Image from "../Components/Image.jsx";
+import Icons from "../Components/Icons";
+import styled from "styled-components";
+import Fonts from "../Services/fonts";
+import Colors from "../Services/colors";
+import Layouts from "../Components/Layouts";
+import Border from "../Components/Border.jsx";
 
 const Map = styled.div`
   iframe {
@@ -22,7 +22,7 @@ const Map = styled.div`
 const SavyDaty = styled.div`
   font-family: ${Fonts.serif};
   color: ${Colors.homeCopy};
-  line-height:1;
+  line-height: 1;
   font-size: 18px;
   padding-top: 40px;
   @media (min-width: 500px) {
@@ -39,15 +39,23 @@ const Names = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  div { margin: 4px; }
-  img { max-width: 42px !important; }
+  div {
+    margin: 4px;
+  }
+  img {
+    max-width: 42px !important;
+  }
   @media (min-width: 350px) {
     flex-direction: row;
   }
   @media (min-width: 500px) {
-    div { margin: 10px; }
+    div {
+      margin: 10px;
+    }
     margin: 0px auto;
-    img { max-width: 100px !important; }
+    img {
+      max-width: 100px !important;
+    }
   }
 `;
 
@@ -66,10 +74,10 @@ const Name = styled.div`
 `;
 
 const RsvpButtonWrap = styled.div`
-  transform:scale(1);
+  transform: scale(1);
   transition: transform 0.2s ease;
   &:hover {
-    transform:scale(1.02);
+    transform: scale(1.02);
   }
 `;
 
@@ -79,35 +87,41 @@ class Home extends Component {
       <div>
         <PageTitle>
           {/* Louise & Jake’s<br />Wedding */}
-          <Image fileName='hometitle.jpg' />
+          <Image fileName="hometitle.jpg" />
         </PageTitle>
 
         {/* <SubTitle>
           01.09.18 | Edinburgh
         </SubTitle> */}
 
-        <HeroPic fileName={"louise-jake.jpg"}/>
+        <HeroPic fileName={"louise-jake.jpg"} />
 
         <Layouts.ContentWidthWrapper>
           <Section>
-            <p>Please join us to celebrate the marriage of <br />
-            Louise Kirsteen McCallum<br /> 
-            and<br /> 
-            Jake Edward Michael Shackleford<br />
-            at Dundas Castle, Edinburgh<br />
-            Saturday 1st September 2018.</p>
+            <p>
+              Please join us to celebrate the marriage of <br />
+              Louise Kirsteen McCallum<br />
+              and<br />
+              Jake Edward Michael Shackleford<br />
+              at Dundas Castle, Edinburgh<br />
+              Saturday 1st September 2018.
+            </p>
           </Section>
           <Section>
             <RsvpButtonWrap>
-               <Image fileName='rsvp.jpg' />
+              <Image fileName="rsvp.jpg" />
             </RsvpButtonWrap>
           </Section>
           <Section>
-            <p><Icons.Email /></p>
+            <p>
+              <Icons.Email />
+            </p>
             <p>dundaswedding2018@gmail.com</p>
           </Section>
           <Section>
-            <p><Icons.Phone /></p>
+            <p>
+              <Icons.Phone />
+            </p>
             <p>Jake: 07787158280</p>
             <p>Louise: 07751137423</p>
           </Section>
@@ -123,19 +137,25 @@ class Home extends Component {
             <p>Which song will get you on the dance floor!</p>
           </Section>
           <Section>
-            <p style={{'padding-bottom':'60px'}}><strong>Dress code:</strong> morning dress, highland dress, or lounge suits.</p>
+            <p style={{ "padding-bottom": "60px" }}>
+              <strong>Dress code:</strong> morning dress, highland dress, or
+              lounge suits.
+            </p>
+            <p>Carriages at midnight</p>
           </Section>
-          
         </Layouts.ContentWidthWrapper>
         <Map>
-          <iframe src="https://snazzymaps.com/embed/10331" width="100%" height="300px" style={{border:0}}></iframe>
+          <iframe
+            src="https://snazzymaps.com/embed/10331"
+            width="100%"
+            height="300px"
+            style={{ border: 0 }}
+          />
         </Map>
 
-          {/* <p>RSVP: dundaswedding2018@gmail.com</p> */}
+        {/* <p>RSVP: dundaswedding2018@gmail.com</p> */}
 
-          {/* <p>Please let us know if you can attend our wedding, and also if you know you cannot. Let us know any dietary requirements and/or allergies.</p> */}
-
-
+        {/* <p>Please let us know if you can attend our wedding, and also if you know you cannot. Let us know any dietary requirements and/or allergies.</p> */}
       </div>
     );
   }

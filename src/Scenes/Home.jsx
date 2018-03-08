@@ -133,7 +133,7 @@ class Home extends Component {
           </Section>
           <Section>
             <p>Please let us know:</p>
-            <p>Any dietary requirements and/or allergies you may have.</p>
+            {/* <p>Any dietary requirements and/or allergies you may have.</p> */}
             <p>Which song will get you on the dance floor!</p>
           </Section>
           <Section>

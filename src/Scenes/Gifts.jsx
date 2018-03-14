@@ -1,22 +1,20 @@
-import React, { Component } from 'react';
-import Layouts from '../Components/Layouts';
-import HeroPic from '../Components/HeroPic.jsx';
-import Image from '../Components/Image.jsx';
-import PageTitle from '../Components/PageTitle.jsx';
-import SubTitle from '../Components/SubTitle.jsx';
-import Section from '../Components/Section.jsx';
-import styled from 'styled-components';
+import React, { Component } from "react";
+import Layouts from "../Components/Layouts";
+import HeroPic from "../Components/HeroPic.jsx";
+import Image from "../Components/Image.jsx";
+import PageTitle from "../Components/PageTitle.jsx";
+import SubTitle from "../Components/SubTitle.jsx";
+import Section from "../Components/Section.jsx";
+import styled from "styled-components";
 
 class Gifts extends Component {
   render() {
-    const Poem = styled.div`
-    
-    `;
+    const Poem = styled.div``;
     return (
       <div>
         <Image fileName="gift-title.jpg" />
 
-        <HeroPic fileName={"piggies.jpg"}/>
+        <HeroPic fileName={"piggies.jpg"} />
 
         <Layouts.ContentWidthWrapper>
           <Section>
@@ -50,11 +48,26 @@ class Gifts extends Component {
               Would really make our day!<br />
               <br />
             </Poem>
-            <p><a href="https://www.weddingshop.com/find-a-list">www.weddingshop.com/find-a-list</a></p>
+            <p>
+              Honeymoon Wishlist<br />
+              <a href="www.trailfinders.com/wishlist#/faf-login">
+                www.trailfinders.com/wishlist#/faf-login
+              </a>
+              Wishlist Number: 5BHJW5 <br />(please do not copy and paste this
+              code, but type in)<br />
+              <br />
+            </p>
+            <p>
+              Registry
+              <a href="https://www.weddingshop.com/find-a-list">
+                www.weddingshop.com/find-a-list
+              </a>
+            </p>
           </Section>
           <br />
-          <HeroPic fileName={"holiday.jpg"}/>
-          <br /><br />
+          <HeroPic fileName={"holiday.jpg"} />
+          <br />
+          <br />
         </Layouts.ContentWidthWrapper>
       </div>
     );

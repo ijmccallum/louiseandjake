@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import { Router, Route, Link } from 'react-router-dom';
-import styled from 'styled-components';
-import Colors from '../Services/colors';
-import Fonts from '../Services/fonts';
-import Layouts from './Layouts';
-import Countdown from './Countdown';
-import Border from './Border';
+import React, { Component } from "react";
+import { Router, Route, Link } from "react-router-dom";
+import styled from "styled-components";
+import Colors from "../Services/colors";
+import Fonts from "../Services/fonts";
+import Layouts from "./Layouts";
+import Countdown from "./Countdown";
+import Border from "./Border";
 
 const FooterWrap = styled.footer`
   background-color: ${Colors.footer.background};
@@ -57,11 +57,12 @@ const LogOutButton = styled.button`
   vertical-align: middle;
   text-decoration: underline;
   svg {
-    width: 10px; height: 10px;
+    width: 10px;
+    height: 10px;
   }
 `;
 
-function Footer(props){
+function Footer(props) {
   return (
     <FooterWrap>
       <Border.Foil />
@@ -69,19 +70,18 @@ function Footer(props){
       <Border.Line />
 
       <LeftRight>
-        <Credit>
-          Site by Iain & Christina McCallum
-        </Credit>
+        <Credit>Site by Iain & Christina McCallum</Credit>
 
         <FooterUtilNav>
           {/* <li><Link to="/rsvp">RSVP</Link></li> */}
-          <li><Link to="/travel">Travel</Link></li>
+          <li>
+            <Link to="/ceilidh">Ceilidh</Link>
+          </li>
           <li>
             <LogOutButton onClick={props.handleLogout}>Logout</LogOutButton>
           </li>
         </FooterUtilNav>
       </LeftRight>
-
     </FooterWrap>
   );
 }

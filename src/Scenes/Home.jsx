@@ -132,9 +132,9 @@ class Home extends Component {
             <p>SW11 2PN</p>
           </Section>
           <Section>
-            <p>Please let us know:</p>
+            {/* <p>Please let us know:</p> */}
             {/* <p>Any dietary requirements and/or allergies you may have.</p> */}
-            <p>Which song will get you on the dance floor!</p>
+            {/* <p>Which song will get you on the dance floor!</p> */}
           </Section>
           <Section>
             <p style={{ "padding-bottom": "60px" }}>

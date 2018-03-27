@@ -50,7 +50,7 @@ class Gifts extends Component {
             </Poem>
             <p>
               Honeymoon Wishlist<br />
-              <a href="www.trailfinders.com/wishlist#/faf-login">
+              <a href="https://www.trailfinders.com/wishlist#/faf-login">
                 www.trailfinders.com/wishlist#/faf-login
               </a>
               Wishlist Number: 5BHJW5 <br />(please do not copy and paste this

@@ -89,6 +89,30 @@ class Transport extends Component {
                 </a>
               </p>
               <br />
+              <p>
+                City Cabs (Edinburgh) Ltd -{" "}
+                <a href="tel:0131-228-1211" style={{ display: "inline" }}>
+                  0131 228 1211
+                </a>&nbsp;
+                <a href="https://www.citycabs.co.uk/">www.citycabs.co.uk</a>
+              </p>
+              <br />
+              <p>
+                Central Taxis -{" "}
+                <a href="tel:0131-229-2468" style={{ display: "inline" }}>
+                  0131 229 2468
+                </a>
+                <a href="https://www.taxis-edinburgh.co.uk/">
+                  www.taxis-edinburgh.co.uk
+                </a>
+              </p>
+              <br />
+              <CapsTitle>CAR HIRE</CapsTitle>
+              <p>
+                <a href="https://www.skyscanner.net/car-hire-from/edi/car-hire-from-edinburgh-airport.html">
+                  www.skyscanner.net/car-hire-from/edi/car-hire-from-edinburgh-airport
+                </a>
+              </p>
               {/* <p style={{ "text-align": "center" }}>
                 Jimmy’s Private Hire<br />
                 <a href="tel:07866-570-212">07866 570 212</a>

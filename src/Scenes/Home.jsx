@@ -94,6 +94,12 @@ class Home extends Component {
           01.09.18 | Edinburgh
         </SubTitle> */}
 
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
+
         <HeroPic fileName={"louise-jake.jpg"} />
 
         <Layouts.ContentWidthWrapper>

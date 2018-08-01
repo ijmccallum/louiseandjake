@@ -17,6 +17,11 @@ class WedPics extends Component {
     return (
       <div>
         {/* <PageTitle>RSVP</PageTitle> */}
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
 
         <Image fileName={"wedpics.png"} />
         <Layouts.ContentWidthWrapper>

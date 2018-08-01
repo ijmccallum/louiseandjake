@@ -13,6 +13,11 @@ class Gifts extends Component {
     return (
       <div>
         <Image fileName="gift-title.jpg" />
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
 
         <HeroPic fileName={"piggies.jpg"} />
 

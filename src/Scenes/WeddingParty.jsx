@@ -1,18 +1,17 @@
-import React, { Component } from 'react';
-import Layouts from '../Components/Layouts';
-import HeroPic from '../Components/HeroPic.jsx';
-import Image from '../Components/Image.jsx';
-import PageTitle from '../Components/PageTitle.jsx';
-import SubTitle from '../Components/SubTitle.jsx';
-import Section from '../Components/Section.jsx';
-import styled from 'styled-components';
-import Person from '../Components/Person.jsx';
+import React, { Component } from "react";
+import Layouts from "../Components/Layouts";
+import HeroPic from "../Components/HeroPic.jsx";
+import Image from "../Components/Image.jsx";
+import PageTitle from "../Components/PageTitle.jsx";
+import SubTitle from "../Components/SubTitle.jsx";
+import Section from "../Components/Section.jsx";
+import styled from "styled-components";
+import Person from "../Components/Person.jsx";
 const Party = styled.div`
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
 `;
-
 
 class WeddingParty extends Component {
   render() {
@@ -20,7 +19,12 @@ class WeddingParty extends Component {
       <div>
         {/* <PageTitle>Wedding Party</PageTitle> */}
 
-        <Image fileName={"wedding-party.jpg"}/>
+        <Image fileName={"wedding-party.jpg"} />
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
         <Layouts.BigContentWidthWrapper>
           <Section>
             <Party>
@@ -30,7 +34,8 @@ class WeddingParty extends Component {
               </Person>
               <Person fileName="mum.jpg">
                 Late Mother of the Bride:<br />
-                Alexandra McCallum who we will miss forever but we have many happy memories of her to cherish.
+                Alexandra McCallum who we will miss forever but we have many
+                happy memories of her to cherish.
               </Person>
               <Person fileName="jlki.jpg">
                 Mother of the Groom: <br />
@@ -78,7 +83,7 @@ class WeddingParty extends Component {
               <Person fileName="Louise-Hayley-Amelia.jpg">
                 Hayley Martin, <br />
                 Amelia Mackin<br />
-                (Bridesmaids) 
+                (Bridesmaids)
               </Person>
               <Person fileName="p.jpg">
                 Louise’s cousin: <br />
@@ -89,10 +94,9 @@ class WeddingParty extends Component {
           </Section>
         </Layouts.BigContentWidthWrapper>
 
-
-            {/* <Person name="" role="Louise’s brother: Iain McCallum (Groomsman) Louise’s sister-in-law: Christina McCallum (Bridesmaid)" fileName="wk.jpg" /> */}
-            {/* <Person name="" role="Louise’s God-mum: Margaret McCallum" fileName="m.jpg" /> */}
-            {/* <Person name="Hayley-Amelia-Louise" role="Hayley-Amelia-Louise" fileName="Hayley-Amelia-Louise.jpg" />
+        {/* <Person name="" role="Louise’s brother: Iain McCallum (Groomsman) Louise’s sister-in-law: Christina McCallum (Bridesmaid)" fileName="wk.jpg" /> */}
+        {/* <Person name="" role="Louise’s God-mum: Margaret McCallum" fileName="m.jpg" /> */}
+        {/* <Person name="Hayley-Amelia-Louise" role="Hayley-Amelia-Louise" fileName="Hayley-Amelia-Louise.jpg" />
             <Person name="" role="" fileName="Jake-lou-on-vacay.jpg" />
             <Person name="" role="" fileName="Lou-Jake-in-south-africa.jpg" />
             <Person name="" role="" fileName="Jake-Lou.jpg" />
@@ -113,12 +117,9 @@ class WeddingParty extends Component {
             <Person name="Christina & Iain" role="Brother & sister-in-law of the bride" fileName="az.jpg">
               also in the party!
             </Person>  */}
-
-
       </div>
     );
   }
 }
 
 export default WeddingParty;
-

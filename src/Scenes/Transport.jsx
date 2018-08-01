@@ -36,6 +36,12 @@ class Transport extends Component {
 
         <Layouts.ContentWidthWrapper>
           <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
+
+        <Layouts.ContentWidthWrapper>
+          <Section>
             <SubTitle>Getting up to Scotland…</SubTitle>
             <div style={{ "text-align": "left" }}>
               <CapsTitle>FROM LONDON</CapsTitle>

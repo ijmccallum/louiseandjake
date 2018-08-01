@@ -46,6 +46,11 @@ class DundasCastle extends Component {
         </PageTitle> */}
 
         <Image fileName="dundas-title.jpg" />
+        <Layouts.ContentWidthWrapper>
+          <Section>
+            <p>#ShacklefordWedding2018</p>
+          </Section>
+        </Layouts.ContentWidthWrapper>
 
         <HeroPic fileName={"dundas.jpg"} />
 

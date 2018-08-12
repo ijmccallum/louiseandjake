@@ -334,6 +334,30 @@ class Ceilidh extends Component {
               </div>
             </Step>
           </Section>
+          <Section>
+            <h2>THE CANDY DANCE</h2>
+            <br />
+            <div>
+              <b>Instructions: </b>{" "}
+              <a
+                href="https://www.youtube.com/watch?v=dv2qKpna3lM"
+                target="_blank"
+              >
+                www.youtube.com/watch?v=dv2qKpna3lM
+              </a>
+            </div>
+            <br />
+
+            <div>
+              <b>Do the Candy Dance: </b>{" "}
+              <a
+                href="https://m.youtube.com/watch?v=lM-pKbPw9Zw"
+                target="_blank"
+              >
+                www.youtube.com/watch?v=lM-pKbPw9Zw
+              </a>
+            </div>
+          </Section>
         </Layouts.ContentWidthWrapper>
       </div>
     );

@@ -86,7 +86,7 @@ class Transport extends Component {
                 The best taxi firm to use would be Capital on&nbsp;
                 <a href="tel:0131-777-7777" style={{ display: "inline" }}>
                   0131 777 7777
-                </a>.{" "}
+                </a>{" "}
                 <a
                   href="https://www.capitalcarsscotland.co.uk/"
                   style={{ display: "inline" }}
@@ -111,6 +111,14 @@ class Transport extends Component {
                 <a href="https://www.taxis-edinburgh.co.uk/">
                   www.taxis-edinburgh.co.uk
                 </a>
+              </p>
+              <br />
+              <p>
+                Scoot -{" "}
+                <a href="tel:0131-656-6666" style={{ display: "inline" }}>
+                  0131 656 6666
+                </a>
+                <a href="http://scootltd.co.uk/">scootltd.co.uk</a>
               </p>
               <br />
               <CapsTitle>CAR HIRE</CapsTitle>

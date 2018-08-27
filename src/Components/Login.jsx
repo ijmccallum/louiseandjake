@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
-import styled from 'styled-components';
-import Colors from '../Services/colors';
-import PageTitle from './PageTitle.jsx';
-import Fonts from '../Services/fonts';
+import React, { Component } from "react";
+import styled from "styled-components";
+import Colors from "../Services/colors";
+import PageTitle from "./PageTitle.jsx";
+import Fonts from "../Services/fonts";
 
 const Background = styled.div`
   position: absolute;
   z-index: 1;
-  top: 0; bottom: 0;
-  left: 0; right: 0;
-  background-image: url('/public/images/dundas.jpg');
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("/public/images/dundas.jpg");
   background-color: ${Colors.tint};
   background-blend-mode: soft-light;
   background-size: cover;
@@ -18,7 +20,7 @@ const Background = styled.div`
   text-align: center;
   padding: 30px;
   color: ${Colors.white};
-  text-shadow: -2px 1px 0 rgba(0,0,0,0.2);
+  text-shadow: -2px 1px 0 rgba(0, 0, 0, 0.2);
 `;
 
 const Title = styled.h1`
@@ -32,21 +34,23 @@ const Title = styled.h1`
 `;
 
 class Login extends Component {
-  
-
   constructor(props) {
     super(props);
     this.state = {
-      value: ''
+      value: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
   }
 
   handleChange(event) {
-    this.setState({value: event.target.value});
+    this.setState({ value: event.target.value });
 
-    if (event.target.value === "dundaswedding2018" || event.target.value === "Dundaswedding2018" || event.target.value === "dev" || event.target.value === "Dev" ) {
+    if (
+      event.target.value.toLowerCase() === "dundaswedding2018" ||
+      event.target.value.toLowerCase() === "dev" ||
+      event.target.value.toLowerCase() === "wedding"
+    ) {
       this.props.successHandler();
     }
   }
@@ -56,7 +60,13 @@ class Login extends Component {
       <Background>
         <Title>Louise & Jake</Title>
         <p>Password</p>
-        <input type="text" value={this.state.value} onChange={this.handleChange} placeholder="password" style={{"padding": "7px 10px"}}/>
+        <input
+          type="text"
+          value={this.state.value}
+          onChange={this.handleChange}
+          placeholder="password"
+          style={{ padding: "7px 10px" }}
+        />
       </Background>
     );
   }

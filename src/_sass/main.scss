@@ -5,3 +5,8 @@ $gold2: #c9a342;
 $white: #fdfffc;
 $gold3: #af8532;
 $gold4: #e8bc44;
+
+.fade-it {
+  opacity: 1;
+  transition: 0.5s ease opacity;
+}
